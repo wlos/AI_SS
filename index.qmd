@@ -1,0 +1,43 @@
+---
+title: "Artificial Intelligence Skill Set"
+subtitle: "Course materials and practical learning activities"
+description: "Learning materials for artificial intelligence, machine learning, neural networks, deep learning, and data preparation."
+toc: false
+---
+
+Welcome to the Artificial Intelligence Skill Set course website. These materials
+introduce the foundations of artificial intelligence and develop the data skills
+needed for practical machine learning.
+
+## Course sessions
+
+::: {.course-grid}
+::: {.course-card}
+### Session 1: Introduction to AI
+
+Explore artificial intelligence, machine learning, neural networks, deep
+learning, and the major milestones in the history of AI.
+
+[Open Session 1](Session_1_Introduction_to_AI.qmd){.btn .btn-primary}
+:::
+
+::: {.course-card}
+### Session 2: Data for Machine Learning
+
+Work with structured and unstructured data, identify features and targets,
+prepare data, examine bias, and create training and test datasets.
+
+[Open Session 2](Session_2_Data_for_Machine_Learning.ipynb){.btn .btn-primary}
+:::
+:::
+
+## Using the materials
+
+Work through the sessions in order. The second session includes Python examples
+and uses the synthetic files in the `sample_data` directory.
+
+::: {.callout-note}
+This website displays a static version of the notebook. To run or modify the
+Python code, download or clone the repository and open the notebook in a
+Jupyter-compatible environment.
+:::

@@ -1,0 +1,85 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Forward and backward propagation in neural network training</title>
+  <desc id="desc">A neural network diagram showing forward propagation from input to prediction, followed by loss calculation and backward propagation to update weights and bias.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7fbff"/>
+      <stop offset="100%" stop-color="#fff8f2"/>
+    </linearGradient>
+    <marker id="arrow-forward" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#243b53"/>
+    </marker>
+    <marker id="arrow-backward" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#c0526d"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="760" fill="url(#bg)"/>
+  <text x="70" y="84" font-family="Helvetica, Arial, sans-serif" font-size="35" font-weight="700" fill="#1d3557">Forward and Backward Propagation in Neural Network Training</text>
+  <text x="70" y="120" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#52667a">Forward propagation produces a prediction. Backward propagation sends error information backwards so the network can update its parameters.</text>
+
+  <rect x="65" y="300" width="160" height="96" rx="18" ry="18" fill="#dff4de" stroke="#4f8a5b" stroke-width="3"/>
+  <text x="117" y="358" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#285133">Input</text>
+
+  <circle cx="360" cy="250" r="25" fill="#dceeff" stroke="#457b9d" stroke-width="3"/>
+  <circle cx="360" cy="350" r="25" fill="#dceeff" stroke="#457b9d" stroke-width="3"/>
+  <circle cx="360" cy="450" r="25" fill="#dceeff" stroke="#457b9d" stroke-width="3"/>
+
+  <circle cx="555" cy="210" r="25" fill="#ffe2cf" stroke="#d17a3f" stroke-width="3"/>
+  <circle cx="555" cy="305" r="25" fill="#ffe2cf" stroke="#d17a3f" stroke-width="3"/>
+  <circle cx="555" cy="400" r="25" fill="#ffe2cf" stroke="#d17a3f" stroke-width="3"/>
+  <circle cx="555" cy="495" r="25" fill="#ffe2cf" stroke="#d17a3f" stroke-width="3"/>
+
+  <circle cx="760" cy="280" r="27" fill="#e5ddff" stroke="#7251a2" stroke-width="3"/>
+  <circle cx="760" cy="420" r="27" fill="#e5ddff" stroke="#7251a2" stroke-width="3"/>
+
+  <text x="306" y="545" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#1d3557">Input layer</text>
+  <text x="472" y="545" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#8a4f26">Hidden layer</text>
+  <text x="697" y="545" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#4b3472">Output layer</text>
+
+  <line x1="225" y1="348" x2="335" y2="250" stroke="#243b53" stroke-width="2.5"/>
+  <line x1="225" y1="348" x2="335" y2="350" stroke="#243b53" stroke-width="2.5"/>
+  <line x1="225" y1="348" x2="335" y2="450" stroke="#243b53" stroke-width="2.5"/>
+
+  <line x1="385" y1="250" x2="530" y2="210" stroke="#243b53" stroke-width="2"/>
+  <line x1="385" y1="250" x2="530" y2="305" stroke="#243b53" stroke-width="2"/>
+  <line x1="385" y1="250" x2="530" y2="400" stroke="#243b53" stroke-width="2"/>
+  <line x1="385" y1="250" x2="530" y2="495" stroke="#243b53" stroke-width="2"/>
+  <line x1="385" y1="350" x2="530" y2="210" stroke="#243b53" stroke-width="2"/>
+  <line x1="385" y1="350" x2="530" y2="305" stroke="#243b53" stroke-width="2"/>
+  <line x1="385" y1="350" x2="530" y2="400" stroke="#243b53" stroke-width="2"/>
+  <line x1="385" y1="350" x2="530" y2="495" stroke="#243b53" stroke-width="2"/>
+  <line x1="385" y1="450" x2="530" y2="210" stroke="#243b53" stroke-width="2"/>
+  <line x1="385" y1="450" x2="530" y2="305" stroke="#243b53" stroke-width="2"/>
+  <line x1="385" y1="450" x2="530" y2="400" stroke="#243b53" stroke-width="2"/>
+  <line x1="385" y1="450" x2="530" y2="495" stroke="#243b53" stroke-width="2"/>
+
+  <line x1="580" y1="210" x2="733" y2="280" stroke="#243b53" stroke-width="2"/>
+  <line x1="580" y1="305" x2="733" y2="280" stroke="#243b53" stroke-width="2"/>
+  <line x1="580" y1="400" x2="733" y2="280" stroke="#243b53" stroke-width="2"/>
+  <line x1="580" y1="495" x2="733" y2="280" stroke="#243b53" stroke-width="2"/>
+  <line x1="580" y1="210" x2="733" y2="420" stroke="#243b53" stroke-width="2"/>
+  <line x1="580" y1="305" x2="733" y2="420" stroke="#243b53" stroke-width="2"/>
+  <line x1="580" y1="400" x2="733" y2="420" stroke="#243b53" stroke-width="2"/>
+  <line x1="580" y1="495" x2="733" y2="420" stroke="#243b53" stroke-width="2"/>
+
+  <rect x="905" y="230" width="175" height="90" rx="18" ry="18" fill="#ffdce2" stroke="#c0526d" stroke-width="3"/>
+  <text x="950" y="286" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#7a2339">Prediction</text>
+
+  <rect x="1110" y="230" width="120" height="90" rx="18" ry="18" fill="#fff3cf" stroke="#b78a17" stroke-width="3"/>
+  <text x="1138" y="286" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#6d5208">Loss</text>
+
+  <line x1="787" y1="280" x2="905" y2="275" stroke="#243b53" stroke-width="4" marker-end="url(#arrow-forward)"/>
+  <line x1="1080" y1="275" x2="1110" y2="275" stroke="#243b53" stroke-width="4" marker-end="url(#arrow-forward)"/>
+
+  <path d="M1170 320 C1150 440, 1025 525, 860 555 C690 586, 505 575, 330 520" fill="none" stroke="#c0526d" stroke-width="5" marker-end="url(#arrow-backward)"/>
+  <text x="865" y="455" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#7a2339">Backward propagation</text>
+
+  <line x1="260" y1="170" x2="930" y2="170" stroke="#243b53" stroke-width="4" marker-end="url(#arrow-forward)"/>
+  <text x="470" y="155" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#243b53">Forward propagation</text>
+
+  <rect x="90" y="620" width="1110" height="90" rx="18" ry="18" fill="#ffffff" opacity="0.95" stroke="#d7dee5" stroke-width="2"/>
+  <text x="120" y="655" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#34495e">Forward propagation:</text>
+  <text x="330" y="655" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#34495e">input -> hidden layers -> output -> prediction.</text>
+  <text x="120" y="688" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#34495e">Backward propagation:</text>
+  <text x="350" y="688" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#34495e">loss -> gradients -> updated weights and bias.</text>
+</svg>

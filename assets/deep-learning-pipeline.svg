@@ -1,0 +1,70 @@
+<svg width="1400" height="820" viewBox="0 0 1400 820" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Key milestones in deep learning since 2006</title>
+  <desc id="desc">A timeline showing major deep learning milestones from 2006 to 2022, including the deep learning revival, AlexNet, ResNet, the Transformer, BERT and GPT, GPT-3, and ChatGPT.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fbff"/>
+      <stop offset="100%" stop-color="#fff8f2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="820" fill="url(#bg)"/>
+  <text x="70" y="84" font-family="Helvetica, Arial, sans-serif" font-size="36" font-weight="700" fill="#243b53">Key Milestones in Deep Learning Since 2006</text>
+  <text x="70" y="120" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#52667a">This timeline starts with the modern revival of deep learning and highlights the representative events that shaped today's models.</text>
+
+  <line x1="120" y1="420" x2="1310" y2="420" stroke="#577590" stroke-width="6" stroke-linecap="round"/>
+
+  <circle cx="150" cy="420" r="14" fill="#277da1"/>
+  <rect x="82" y="230" width="136" height="138" rx="18" ry="18" fill="#ffffff" stroke="#277da1" stroke-width="2"/>
+  <text x="113" y="272" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#174a61">2006</text>
+  <text x="100" y="306" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#2b6179">Hinton and</text>
+  <text x="102" y="329" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#2b6179">colleagues</text>
+  <text x="96" y="352" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#2b6179">revive deep</text>
+  <text x="100" y="375" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#2b6179">learning</text>
+
+  <circle cx="330" cy="420" r="14" fill="#f8961e"/>
+  <rect x="262" y="470" width="136" height="138" rx="18" ry="18" fill="#ffffff" stroke="#f8961e" stroke-width="2"/>
+  <text x="293" y="512" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#8d5400">2012</text>
+  <text x="294" y="546" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#9a661d">AlexNet</text>
+  <text x="283" y="569" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#9a661d">wins the</text>
+  <text x="276" y="592" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#9a661d">ImageNet race</text>
+
+  <circle cx="500" cy="420" r="14" fill="#bc6c25"/>
+  <rect x="432" y="230" width="136" height="138" rx="18" ry="18" fill="#ffffff" stroke="#bc6c25" stroke-width="2"/>
+  <text x="463" y="272" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#67380b">2015</text>
+  <text x="466" y="306" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#7c4e24">ResNet</text>
+  <text x="455" y="329" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#7c4e24">enables much</text>
+  <text x="460" y="352" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#7c4e24">deeper nets</text>
+
+  <circle cx="680" cy="420" r="14" fill="#c1121f"/>
+  <rect x="612" y="470" width="136" height="138" rx="18" ry="18" fill="#ffffff" stroke="#c1121f" stroke-width="2"/>
+  <text x="643" y="512" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#700b12">2017</text>
+  <text x="622" y="546" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#8e2430">Transformer</text>
+  <text x="629" y="569" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#8e2430">changes NLP</text>
+  <text x="633" y="592" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#8e2430">design</text>
+
+  <circle cx="860" cy="420" r="14" fill="#6d597a"/>
+  <rect x="792" y="230" width="136" height="138" rx="18" ry="18" fill="#ffffff" stroke="#6d597a" stroke-width="2"/>
+  <text x="823" y="272" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#443050">2018</text>
+  <text x="815" y="306" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#5e4a69">BERT and</text>
+  <text x="818" y="329" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#5e4a69">GPT show</text>
+  <text x="808" y="352" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#5e4a69">pretraining power</text>
+
+  <circle cx="1040" cy="420" r="14" fill="#43aa8b"/>
+  <rect x="972" y="470" width="136" height="138" rx="18" ry="18" fill="#ffffff" stroke="#43aa8b" stroke-width="2"/>
+  <text x="1003" y="512" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1d4f45">2020</text>
+  <text x="1010" y="546" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#49796d">GPT-3</text>
+  <text x="992" y="569" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#49796d">shows scaling</text>
+  <text x="997" y="592" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#49796d">at large scale</text>
+
+  <circle cx="1220" cy="420" r="14" fill="#2a9d8f"/>
+  <rect x="1152" y="230" width="136" height="138" rx="18" ry="18" fill="#ffffff" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="1183" y="272" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#16534c">2022</text>
+  <text x="1170" y="306" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#286860">ChatGPT</text>
+  <text x="1171" y="329" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#286860">makes generative</text>
+  <text x="1188" y="352" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#286860">AI mainstream</text>
+
+  <rect x="120" y="680" width="1160" height="86" rx="18" ry="18" fill="#ffffff" opacity="0.95" stroke="#d7dee5" stroke-width="2"/>
+  <text x="150" y="718" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#34495e">Three long-term drivers behind these milestones:</text>
+  <text x="580" y="718" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#34495e">better algorithms, larger datasets, and stronger computing.</text>
+  <text x="150" y="748" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#34495e">Together, they turned deep learning from a research idea into a widely used technology.</text>
+</svg>

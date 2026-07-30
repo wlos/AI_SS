@@ -1,0 +1,40 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Typical machine learning process</title>
+  <desc id="desc">A machine learning process diagram showing training data feeding a machine learning algorithm, which produces a model function. New data enters the model function and results in a predicted value.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fbff"/>
+      <stop offset="100%" stop-color="#fff8f2"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#243b53"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <text x="80" y="90" font-family="Helvetica, Arial, sans-serif" font-size="38" font-weight="700" fill="#1d3557">Typical Machine Learning Process</text>
+  <text x="80" y="130" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#52667a">The algorithm learns a model from training data, and the learned model is then used to make predictions on new data.</text>
+
+  <rect x="500" y="170" width="280" height="96" rx="18" ry="18" fill="#dff4de" stroke="#4f8a5b" stroke-width="3"/>
+  <text x="570" y="228" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#285133">Training Data</text>
+
+  <rect x="465" y="330" width="350" height="108" rx="18" ry="18" fill="#dceeff" stroke="#457b9d" stroke-width="3"/>
+  <text x="515" y="387" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#1d3557">Machine Learning</text>
+  <text x="588" y="420" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#1d3557">Algorithm</text>
+
+  <rect x="455" y="520" width="370" height="108" rx="18" ry="18" fill="#ffe2cf" stroke="#d17a3f" stroke-width="3"/>
+  <text x="543" y="582" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#8a4f26">Model Function</text>
+
+  <rect x="90" y="520" width="250" height="108" rx="18" ry="18" fill="#e5ddff" stroke="#7251a2" stroke-width="3"/>
+  <text x="156" y="582" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#4b3472">New Data</text>
+
+  <rect x="940" y="520" width="250" height="108" rx="18" ry="18" fill="#ffdce2" stroke="#c0526d" stroke-width="3"/>
+  <text x="982" y="582" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#7a2339">Predicted Value</text>
+
+  <line x1="640" y1="266" x2="640" y2="330" stroke="#243b53" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="640" y1="438" x2="640" y2="520" stroke="#243b53" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="340" y1="574" x2="455" y2="574" stroke="#243b53" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="825" y1="574" x2="940" y2="574" stroke="#243b53" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <rect x="120" y="665" width="1040" height="42" rx="14" ry="14" fill="#ffffff" opacity="0.95" stroke="#d7dee5" stroke-width="2"/>
+  <text x="156" y="693" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#34495e">Training phase: training data -> algorithm -> model function. Inference phase: new data -> model function -> predicted value.</text>
+</svg>

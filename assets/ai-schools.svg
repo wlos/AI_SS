@@ -1,0 +1,46 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Three classic schools of AI</title>
+  <desc id="desc">A comparison diagram showing symbolism, behaviourism, and connectionism as three classic schools of AI.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7fbff"/>
+      <stop offset="100%" stop-color="#fffaf2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <text x="70" y="86" font-family="Helvetica, Arial, sans-serif" font-size="36" font-weight="700" fill="#243b53">Three Classic Schools of AI</text>
+  <text x="70" y="122" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#52667a">These schools approach intelligence in different ways: rules, behaviour, and learned connections.</text>
+
+  <rect x="80" y="190" width="340" height="420" rx="28" ry="28" fill="#dceeff" stroke="#457b9d" stroke-width="3"/>
+  <text x="170" y="248" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#1d3557">Symbolism</text>
+  <text x="125" y="298" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#385864">Main idea: intelligence through</text>
+  <text x="165" y="330" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#385864">rules, symbols, and logic.</text>
+  <text x="125" y="390" font-family="Helvetica, Arial, sans-serif" font-size="21" fill="#385864">Focus</text>
+  <text x="125" y="422" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#385864">knowledge representation</text>
+  <text x="125" y="452" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#385864">reasoning</text>
+  <text x="125" y="482" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#385864">expert systems</text>
+  <text x="125" y="542" font-family="Helvetica, Arial, sans-serif" font-size="21" fill="#385864">Best at</text>
+  <text x="125" y="574" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#385864">clear logic and structured tasks</text>
+
+  <rect x="470" y="190" width="340" height="420" rx="28" ry="28" fill="#dff4de" stroke="#4f8a5b" stroke-width="3"/>
+  <text x="551" y="248" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#285133">Behaviourism</text>
+  <text x="518" y="298" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#46704e">Main idea: intelligence through</text>
+  <text x="545" y="330" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#46704e">action, control, and feedback.</text>
+  <text x="515" y="390" font-family="Helvetica, Arial, sans-serif" font-size="21" fill="#46704e">Focus</text>
+  <text x="515" y="422" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#46704e">sensing and acting</text>
+  <text x="515" y="452" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#46704e">control systems</text>
+  <text x="515" y="482" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#46704e">robot behaviour</text>
+  <text x="515" y="542" font-family="Helvetica, Arial, sans-serif" font-size="21" fill="#46704e">Best at</text>
+  <text x="515" y="574" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#46704e">real-time interaction with the world</text>
+
+  <rect x="860" y="190" width="340" height="420" rx="28" ry="28" fill="#ffe2cf" stroke="#d17a3f" stroke-width="3"/>
+  <text x="937" y="248" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#8a4f26">Connectionism</text>
+  <text x="905" y="298" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#9b6b48">Main idea: intelligence through</text>
+  <text x="925" y="330" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#9b6b48">learned neuron-like connections.</text>
+  <text x="905" y="390" font-family="Helvetica, Arial, sans-serif" font-size="21" fill="#9b6b48">Focus</text>
+  <text x="905" y="422" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#9b6b48">pattern learning</text>
+  <text x="905" y="452" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#9b6b48">neural networks</text>
+  <text x="905" y="482" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#9b6b48">deep learning</text>
+  <text x="905" y="542" font-family="Helvetica, Arial, sans-serif" font-size="21" fill="#9b6b48">Best at</text>
+  <text x="905" y="574" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#9b6b48">learning patterns from large data</text>
+</svg>

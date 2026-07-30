@@ -1,0 +1,49 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - Session_1_Introduction_to_AI.qmd
+    - Session_2_Data_for_Machine_Learning.ipynb
+
+website:
+  title: "Artificial Intelligence Skill Set"
+  site-url: "https://wlos.github.io/AI_SS/"
+  repo-url: "https://github.com/wlos/AI_SS"
+  repo-actions:
+    - source
+  navbar:
+    background: primary
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Session 1"
+        href: Session_1_Introduction_to_AI.qmd
+      - text: "Session 2"
+        href: Session_2_Data_for_Machine_Learning.ipynb
+  sidebar:
+    style: floating
+    search: true
+    contents:
+      - index.qmd
+      - section: "Course Sessions"
+        contents:
+          - Session_1_Introduction_to_AI.qmd
+          - Session_2_Data_for_Machine_Learning.ipynb
+  page-footer:
+    left: "Artificial Intelligence Skill Set course materials"
+    right:
+      - icon: github
+        href: "https://github.com/wlos/AI_SS"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+    smooth-scroll: true
+
+execute:
+  enabled: false

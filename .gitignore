@@ -1,0 +1,7 @@
+.DS_Store
+**/.DS_Store
+_site/
+.quarto/
+.jupyter_cache/
+__pycache__/
+.venv/

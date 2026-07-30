@@ -1,0 +1,38 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Common activation functions</title>
+  <desc id="desc">A teaching diagram comparing sigmoid, tanh, and ReLU activation functions.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7fbff"/>
+      <stop offset="100%" stop-color="#fff8f2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="760" fill="url(#bg)"/>
+  <text x="70" y="86" font-family="Helvetica, Arial, sans-serif" font-size="36" font-weight="700" fill="#243b53">Common Activation Functions</text>
+  <text x="70" y="122" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#52667a">Activation functions let neural networks learn non-linear relationships.</text>
+
+  <rect x="90" y="180" width="340" height="470" rx="28" ry="28" fill="#dceeff" stroke="#457b9d" stroke-width="3"/>
+  <text x="200" y="234" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#1d3557">Sigmoid</text>
+  <path d="M150 520 C200 520, 215 520, 240 480 C270 430, 290 355, 315 290 C340 225, 360 225, 390 225" fill="none" stroke="#457b9d" stroke-width="5"/>
+  <line x1="145" y1="540" x2="395" y2="540" stroke="#7f8c99" stroke-width="2"/>
+  <line x1="155" y1="560" x2="155" y2="215" stroke="#7f8c99" stroke-width="2"/>
+  <text x="140" y="605" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#385864">Output range: 0 to 1</text>
+  <text x="140" y="635" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#385864">Useful for probabilities</text>
+
+  <rect x="470" y="180" width="340" height="470" rx="28" ry="28" fill="#dff4de" stroke="#4f8a5b" stroke-width="3"/>
+  <text x="595" y="234" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#285133">Tanh</text>
+  <path d="M530 525 C575 525, 590 520, 610 470 C635 400, 655 300, 680 240 C700 195, 720 190, 750 190" fill="none" stroke="#4f8a5b" stroke-width="5"/>
+  <line x1="525" y1="420" x2="775" y2="420" stroke="#7f8c99" stroke-width="2"/>
+  <line x1="535" y1="560" x2="535" y2="205" stroke="#7f8c99" stroke-width="2"/>
+  <text x="520" y="605" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#46704e">Output range: -1 to 1</text>
+  <text x="520" y="635" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#46704e">Centred around zero</text>
+
+  <rect x="850" y="180" width="340" height="470" rx="28" ry="28" fill="#ffe2cf" stroke="#d17a3f" stroke-width="3"/>
+  <text x="990" y="234" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#8a4f26">ReLU</text>
+  <line x1="910" y1="520" x2="1030" y2="520" stroke="#d17a3f" stroke-width="5"/>
+  <line x1="1030" y1="520" x2="1130" y2="280" stroke="#d17a3f" stroke-width="5"/>
+  <line x1="905" y1="540" x2="1155" y2="540" stroke="#7f8c99" stroke-width="2"/>
+  <line x1="1030" y1="560" x2="1030" y2="215" stroke="#7f8c99" stroke-width="2"/>
+  <text x="900" y="605" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#9b6b48">Output: 0 for negative input</text>
+  <text x="900" y="635" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#9b6b48">Popular in deep learning</text>
+</svg>

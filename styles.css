@@ -1,0 +1,45 @@
+:root {
+  --course-navy: #17365d;
+  --course-blue: #2166a5;
+  --course-sky: #eaf4fb;
+  --course-border: #c9d9e8;
+}
+
+.navbar {
+  background: linear-gradient(120deg, var(--course-navy), var(--course-blue));
+}
+
+.quarto-title-banner {
+  background: linear-gradient(135deg, var(--course-sky), #ffffff);
+  border-bottom: 1px solid var(--course-border);
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 1px solid var(--course-border);
+  border-radius: 0.75rem;
+  background: #ffffff;
+  box-shadow: 0 0.3rem 1rem rgb(23 54 93 / 8%);
+}
+
+.course-card h3 {
+  margin-top: 0;
+  color: var(--course-navy);
+}
+
+.course-card .btn {
+  margin-top: auto;
+}
+
+pre {
+  border-radius: 0.4rem;
+}

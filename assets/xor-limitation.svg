@@ -1,0 +1,36 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Why XOR is difficult for a single-layer perceptron</title>
+  <desc id="desc">A comparison showing a linearly separable problem on the left and the XOR pattern on the right, which cannot be solved by a single straight line.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fbff"/>
+      <stop offset="100%" stop-color="#fff8f2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <text x="70" y="86" font-family="Helvetica, Arial, sans-serif" font-size="36" font-weight="700" fill="#243b53">Perceptron Limitation: XOR</text>
+  <text x="70" y="122" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#52667a">A single-layer perceptron can separate data with one straight line, but XOR needs a more complex boundary.</text>
+
+  <rect x="90" y="180" width="480" height="460" rx="28" ry="28" fill="#dceeff" stroke="#457b9d" stroke-width="3"/>
+  <text x="180" y="236" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#1d3557">Linearly Separable Case</text>
+  <line x1="180" y1="560" x2="490" y2="560" stroke="#7f8c99" stroke-width="2"/>
+  <line x1="200" y1="580" x2="200" y2="250" stroke="#7f8c99" stroke-width="2"/>
+  <line x1="230" y1="520" x2="470" y2="300" stroke="#457b9d" stroke-width="4"/>
+  <circle cx="270" cy="490" r="16" fill="#457b9d"/>
+  <circle cx="320" cy="450" r="16" fill="#457b9d"/>
+  <circle cx="370" cy="400" r="16" fill="#457b9d"/>
+  <circle cx="405" cy="310" r="16" fill="#d17a3f"/>
+  <circle cx="450" cy="270" r="16" fill="#d17a3f"/>
+  <circle cx="315" cy="530" r="16" fill="#457b9d"/>
+
+  <rect x="710" y="180" width="480" height="460" rx="28" ry="28" fill="#ffe2cf" stroke="#d17a3f" stroke-width="3"/>
+  <text x="845" y="236" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#8a4f26">XOR Pattern</text>
+  <line x1="800" y1="560" x2="1110" y2="560" stroke="#7f8c99" stroke-width="2"/>
+  <line x1="820" y1="580" x2="820" y2="250" stroke="#7f8c99" stroke-width="2"/>
+  <circle cx="890" cy="500" r="18" fill="#457b9d"/>
+  <circle cx="1040" cy="350" r="18" fill="#457b9d"/>
+  <circle cx="890" cy="350" r="18" fill="#d17a3f"/>
+  <circle cx="1040" cy="500" r="18" fill="#d17a3f"/>
+  <line x1="860" y1="540" x2="1080" y2="310" stroke="#c0526d" stroke-width="4" opacity="0.75"/>
+  <text x="820" y="610" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#9b6b48">No single straight line can separate these two classes.</text>
+</svg>
