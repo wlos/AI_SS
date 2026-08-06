@@ -4,7 +4,8 @@ project:
   render:
     - index.qmd
     - Session_1_Introduction_to_AI.qmd
-    - Session_2_Data_for_Machine_Learning.ipynb
+    - "Session 2 Data for Machine Learning.ipynb"
+    - "Session3 Essentials of ML and DL Technologies.ipynb"
 
 website:
   title: "Artificial Intelligence Skill Set"
@@ -20,7 +21,9 @@ website:
       - text: "Session 1"
         href: Session_1_Introduction_to_AI.qmd
       - text: "Session 2"
-        href: Session_2_Data_for_Machine_Learning.ipynb
+        href: "Session 2 Data for Machine Learning.ipynb"
+      - text: "Session 3"
+        href: "Session3 Essentials of ML and DL Technologies.ipynb"
   sidebar:
     style: floating
     search: true
@@ -29,7 +32,8 @@ website:
       - section: "Course Sessions"
         contents:
           - Session_1_Introduction_to_AI.qmd
-          - Session_2_Data_for_Machine_Learning.ipynb
+          - "Session 2 Data for Machine Learning.ipynb"
+          - "Session3 Essentials of ML and DL Technologies.ipynb"
   page-footer:
     left: "Artificial Intelligence Skill Set course materials"
     right:

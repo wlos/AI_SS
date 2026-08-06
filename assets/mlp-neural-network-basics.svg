@@ -1,0 +1,82 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description">
+  <title id="title">Multilayer perceptron architecture</title>
+  <desc id="description">A fully connected neural network with an input layer, two hidden layers and an output layer.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7fbff"/>
+      <stop offset="100%" stop-color="#fffaf2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#1d3557" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="700" rx="24" fill="url(#background)"/>
+  <text x="600" y="58" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#19324d">Multilayer Perceptron (MLP)</text>
+  <text x="600" y="90" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#526a7d">Information moves forward through fully connected layers</text>
+
+  <!-- Connections: input layer to hidden layer 1 -->
+  <g stroke="#8aa8bd" stroke-width="2" opacity="0.58">
+    <line x1="218" y1="220" x2="432" y2="170"/><line x1="218" y1="220" x2="432" y2="290"/><line x1="218" y1="220" x2="432" y2="410"/><line x1="218" y1="220" x2="432" y2="530"/>
+    <line x1="218" y1="350" x2="432" y2="170"/><line x1="218" y1="350" x2="432" y2="290"/><line x1="218" y1="350" x2="432" y2="410"/><line x1="218" y1="350" x2="432" y2="530"/>
+    <line x1="218" y1="480" x2="432" y2="170"/><line x1="218" y1="480" x2="432" y2="290"/><line x1="218" y1="480" x2="432" y2="410"/><line x1="218" y1="480" x2="432" y2="530"/>
+  </g>
+
+  <!-- Connections: hidden layer 1 to hidden layer 2 -->
+  <g stroke="#b29acb" stroke-width="2" opacity="0.58">
+    <line x1="508" y1="170" x2="722" y2="220"/><line x1="508" y1="170" x2="722" y2="350"/><line x1="508" y1="170" x2="722" y2="480"/>
+    <line x1="508" y1="290" x2="722" y2="220"/><line x1="508" y1="290" x2="722" y2="350"/><line x1="508" y1="290" x2="722" y2="480"/>
+    <line x1="508" y1="410" x2="722" y2="220"/><line x1="508" y1="410" x2="722" y2="350"/><line x1="508" y1="410" x2="722" y2="480"/>
+    <line x1="508" y1="530" x2="722" y2="220"/><line x1="508" y1="530" x2="722" y2="350"/><line x1="508" y1="530" x2="722" y2="480"/>
+  </g>
+
+  <!-- Connections: hidden layer 2 to output layer -->
+  <g stroke="#c49063" stroke-width="2.5" opacity="0.68">
+    <line x1="798" y1="220" x2="1002" y2="350"/>
+    <line x1="798" y1="350" x2="1002" y2="350"/>
+    <line x1="798" y1="480" x2="1002" y2="350"/>
+  </g>
+
+  <!-- Input nodes -->
+  <g filter="url(#shadow)" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">
+    <circle cx="180" cy="220" r="38" fill="#dceeff" stroke="#3d7ea6" stroke-width="3"/><text x="180" y="228" fill="#1d4e70">x₁</text>
+    <circle cx="180" cy="350" r="38" fill="#dceeff" stroke="#3d7ea6" stroke-width="3"/><text x="180" y="358" fill="#1d4e70">x₂</text>
+    <circle cx="180" cy="480" r="38" fill="#dceeff" stroke="#3d7ea6" stroke-width="3"/><text x="180" y="488" fill="#1d4e70">x₃</text>
+  </g>
+
+  <!-- Hidden layer 1 nodes -->
+  <g filter="url(#shadow)" font-family="Helvetica, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="middle">
+    <circle cx="470" cy="170" r="38" fill="#e8def8" stroke="#7654a3" stroke-width="3"/><text x="470" y="177" fill="#4b3472">h₁</text>
+    <circle cx="470" cy="290" r="38" fill="#e8def8" stroke="#7654a3" stroke-width="3"/><text x="470" y="297" fill="#4b3472">h₂</text>
+    <circle cx="470" cy="410" r="38" fill="#e8def8" stroke="#7654a3" stroke-width="3"/><text x="470" y="417" fill="#4b3472">h₃</text>
+    <circle cx="470" cy="530" r="38" fill="#e8def8" stroke="#7654a3" stroke-width="3"/><text x="470" y="537" fill="#4b3472">h₄</text>
+  </g>
+
+  <!-- Hidden layer 2 nodes -->
+  <g filter="url(#shadow)" font-family="Helvetica, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="middle">
+    <circle cx="760" cy="220" r="38" fill="#dff3df" stroke="#4f8a5b" stroke-width="3"/><text x="760" y="227" fill="#285133">g₁</text>
+    <circle cx="760" cy="350" r="38" fill="#dff3df" stroke="#4f8a5b" stroke-width="3"/><text x="760" y="357" fill="#285133">g₂</text>
+    <circle cx="760" cy="480" r="38" fill="#dff3df" stroke="#4f8a5b" stroke-width="3"/><text x="760" y="487" fill="#285133">g₃</text>
+  </g>
+
+  <!-- Output node -->
+  <g filter="url(#shadow)" font-family="Helvetica, Arial, sans-serif" text-anchor="middle">
+    <circle cx="1040" cy="350" r="42" fill="#ffe5cf" stroke="#cf7638" stroke-width="3"/>
+    <text x="1040" y="359" font-size="24" font-weight="700" fill="#8a4f26">ŷ</text>
+  </g>
+
+  <!-- Layer labels -->
+  <g font-family="Helvetica, Arial, sans-serif" text-anchor="middle">
+    <text x="180" y="600" font-size="22" font-weight="700" fill="#1d4e70">Input layer</text>
+    <text x="180" y="628" font-size="17" fill="#526a7d">feature values</text>
+    <text x="470" y="600" font-size="22" font-weight="700" fill="#4b3472">Hidden layer 1</text>
+    <text x="470" y="628" font-size="17" fill="#526a7d">weights + bias + activation</text>
+    <text x="760" y="600" font-size="22" font-weight="700" fill="#285133">Hidden layer 2</text>
+    <text x="760" y="628" font-size="17" fill="#526a7d">learnt representations</text>
+    <text x="1040" y="600" font-size="22" font-weight="700" fill="#8a4f26">Output layer</text>
+    <text x="1040" y="628" font-size="17" fill="#526a7d">prediction</text>
+  </g>
+
+  <rect x="330" y="650" width="540" height="34" rx="17" fill="#ffffff" stroke="#d4dee5"/>
+  <text x="600" y="673" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#40586b">Every connection has a learnt weight; hidden neurons add non-linearity.</text>
+</svg>

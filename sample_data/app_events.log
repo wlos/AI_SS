@@ -1,0 +1,5 @@
+2026-07-01 09:15 | INFO | user=alex | action=login | status=success
+2026-07-01 09:18 | WARNING | user=mei | action=download | status=large_file
+2026-07-01 09:21 | INFO | user=sam | action=upload | status=success
+2026-07-01 09:24 | ERROR | user=alex | action=payment | status=failed
+2026-07-01 09:31 | INFO | user=mei | action=logout | status=success

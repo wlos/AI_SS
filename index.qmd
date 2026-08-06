@@ -26,9 +26,16 @@ learning, and the major milestones in the history of AI.
 :::
 
 ::: {.session-card}
-### [Session 2: Data for Machine Learning](Session_2_Data_for_Machine_Learning.ipynb)
+### [Session 2: Data for Machine Learning](<Session 2 Data for Machine Learning.ipynb>)
 
 Work with structured and unstructured data, identify features and targets,
 prepare data, examine bias, and create training and test datasets.
+:::
+
+::: {.session-card}
+### [Session 3: Essentials of ML and DL Technologies](<Session3 Essentials of ML and DL Technologies.ipynb>)
+
+Compare common machine learning methods, follow practical scikit-learn
+workflows, and build regression and classification models through case studies.
 :::
 :::
