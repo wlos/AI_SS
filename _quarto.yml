@@ -41,6 +41,10 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+    toc-location: right
+    toc-title: "Outline"
+    toc-depth: 2
+    toc-expand: true
     code-copy: true
     code-overflow: wrap
     smooth-scroll: true
