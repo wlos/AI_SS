@@ -46,8 +46,8 @@ format:
     css: styles.css
     toc: true
     toc-location: right
-    toc-title: "Outline"
-    toc-depth: 2
+    toc-title: "On this page"
+    toc-depth: 3
     toc-expand: true
     code-copy: true
     code-overflow: wrap

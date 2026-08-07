@@ -1,6 +1,5 @@
 ---
 page-layout: full
-toc: false
 ---
 
 ::: {.course-hero}
