@@ -32,7 +32,7 @@ prepare data, examine bias, and create training and test datasets.
 :::
 
 ::: {.session-card}
-### [Session 3: Essentials of ML and DL Technologies](<Session3 Essentials of ML and DL Technologies.ipynb>)
+### [Session 3: Machine Learning Essentials](<Session3 Essentials of ML and DL Technologies.ipynb>)
 
 Compare common machine learning methods, follow practical scikit-learn
 workflows, and build a compact linear regression model.
