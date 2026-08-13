@@ -5,3 +5,6 @@ _site/
 .jupyter_cache/
 __pycache__/
 .venv/
+
+# Local temporary files created during Codex-assisted development
+.codex-tmp/
