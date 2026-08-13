@@ -104,6 +104,31 @@ pre {
   border-radius: 0.4rem;
 }
 
+/* Keep wide Markdown and notebook-output tables inside the page layout. */
+main.content,
+.page-columns,
+.column-page,
+.cell-output-display {
+  min-width: 0;
+}
+
+main.content table,
+.cell-output-display table {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+main.content table th,
+main.content table td,
+.cell-output-display table th,
+.cell-output-display table td {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
 @media (max-width: 575px) {
   .course-hero {
     border-radius: 1rem;
