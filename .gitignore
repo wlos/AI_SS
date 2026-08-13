@@ -6,5 +6,5 @@ _site/
 __pycache__/
 .venv/
 
-# Local temporary files created during Codex-assisted development
-.codex-tmp/
+# Visible local directory for temporary files created during development
+achieve/
