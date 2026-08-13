@@ -35,6 +35,20 @@ prepare data, examine bias, and create training and test datasets.
 ### [Session 3: Essentials of ML and DL Technologies](<Session3 Essentials of ML and DL Technologies.ipynb>)
 
 Compare common machine learning methods, follow practical scikit-learn
-workflows, and build regression and classification models through case studies.
+workflows, and build a compact linear regression model.
+:::
+
+::: {.session-card}
+### [Session 4: Machine Learning Case Studies](<Session4 Machine Learning Case Studies.ipynb>)
+
+Build and compare regression, classification and clustering workflows using
+California Housing, Diabetes, Linnerud, MNIST and the built-in Wine dataset.
+:::
+
+::: {.session-card}
+### [Session 5: AI Opportunities](<Session5 AI Opportunities.ipynb>)
+
+Frame AI opportunities through problem, data, methods and responsible use;
+then explore recommendation, HR, multi-label text and network-security applications.
 :::
 :::

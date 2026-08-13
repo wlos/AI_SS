@@ -8,3 +8,7 @@ __pycache__/
 
 # Visible local directory for temporary files created during development
 archive/
+
+# Local Codex project instructions and sandbox settings
+AGENTS.md
+.codex/
