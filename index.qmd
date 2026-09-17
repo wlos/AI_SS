@@ -46,7 +46,7 @@ California Housing, Diabetes, Linnerud, MNIST and the built-in Wine dataset.
 :::
 
 ::: {.session-card}
-### [Session 5: AI Opportunities](<Session5 AI Opportunities.ipynb>)
+### [Sessions 5–6: AI Opportunities](<Session5-6 AI Opportunities.ipynb>)
 
 Frame AI opportunities through problem, data, methods and responsible use;
 then explore recommendation, HR, multi-label text and network-security applications.
