@@ -8,6 +8,7 @@ project:
     - "Session3 Essentials of ML and DL Technologies.ipynb"
     - "Session4 Machine Learning Case Studies.ipynb"
     - "Session5-6 AI Opportunities.ipynb"
+    - "Session8 Machine Learning Evaluation.ipynb"
 
 website:
   title: "Artificial Intelligence Skill Set"
@@ -30,6 +31,8 @@ website:
         href: "Session4 Machine Learning Case Studies.ipynb"
       - text: "Sessions 5–6"
         href: "Session5-6 AI Opportunities.ipynb"
+      - text: "Session 8"
+        href: "Session8 Machine Learning Evaluation.ipynb"
   sidebar:
     style: floating
     search: true
@@ -42,6 +45,7 @@ website:
           - "Session3 Essentials of ML and DL Technologies.ipynb"
           - "Session4 Machine Learning Case Studies.ipynb"
           - "Session5-6 AI Opportunities.ipynb"
+          - "Session8 Machine Learning Evaluation.ipynb"
   page-footer:
     left: "Artificial Intelligence Skill Set course materials"
     right:

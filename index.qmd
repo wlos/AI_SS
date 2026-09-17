@@ -51,4 +51,11 @@ California Housing, Diabetes, Linnerud, MNIST and the built-in Wine dataset.
 Frame AI opportunities through problem, data, methods and responsible use;
 then explore recommendation, HR, multi-label text and network-security applications.
 :::
+
+::: {.session-card}
+### [Session 8: Machine Learning Evaluation](<Session8 Machine Learning Evaluation.ipynb>)
+
+Select and interpret classification, regression and clustering metrics;
+diagnose underfitting and overfitting; and compare models with cross-validation.
+:::
 :::
