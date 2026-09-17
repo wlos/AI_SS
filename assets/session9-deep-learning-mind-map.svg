@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="880" viewBox="0 0 1600 880" role="img" aria-labelledby="title description">
+  <title id="title">Deep learning application mind map</title>
+  <desc id="description">Deep Learning appears as the root on the left and connects to three application scenarios on the right: images with convolutional neural networks, sequences with recurrent neural networks, and language models with Transformers.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#edf3fb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#16325c" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#00857a"/>
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#d16b38"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8e5ab5"/>
+    </marker>
+    <style>
+      .title { font: 700 30px Arial, Helvetica, sans-serif; fill: #102a43; }
+      .root { font: 700 40px Arial, Helvetica, sans-serif; fill: #ffffff; }
+      .scenario { font: 700 27px Arial, Helvetica, sans-serif; fill: #ffffff; }
+      .architecture { font: 700 22px Arial, Helvetica, sans-serif; fill: #243b53; }
+      .item { font: 500 19px Arial, Helvetica, sans-serif; fill: #486581; }
+      .connector { fill: none; stroke-width: 7; stroke-linecap: round; opacity: 0.82; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="880" rx="28" fill="url(#background)"/>
+  <text x="76" y="70" class="title">Deep Learning: Three Application Scenarios</text>
+
+  <path class="connector" stroke="#00857a" marker-end="url(#arrow-teal)" d="M470 420 C585 420, 595 190, 710 190"/>
+  <path class="connector" stroke="#d16b38" marker-end="url(#arrow-orange)" d="M470 440 C585 440, 595 440, 710 440"/>
+  <path class="connector" stroke="#8e5ab5" marker-end="url(#arrow-purple)" d="M470 460 C585 460, 595 690, 710 690"/>
+
+  <g filter="url(#shadow)">
+    <rect x="90" y="325" width="380" height="230" rx="48" fill="#173f73"/>
+    <text x="280" y="423" text-anchor="middle" class="root">Deep</text>
+    <text x="280" y="477" text-anchor="middle" class="root">Learning</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="730" y="95" width="760" height="190" rx="28" fill="#ffffff"/>
+    <path d="M758 95 H1462 A28 28 0 0 1 1490 123 V160 H730 V123 A28 28 0 0 1 758 95 Z" fill="#00857a"/>
+    <text x="1110" y="138" text-anchor="middle" class="scenario">Images</text>
+    <text x="770" y="205" class="architecture">Convolutional Neural Networks (CNNs)</text>
+    <text x="770" y="246" class="item">Image classification  ·  Object detection  ·  Image generation</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="730" y="345" width="760" height="190" rx="28" fill="#ffffff"/>
+    <path d="M758 345 H1462 A28 28 0 0 1 1490 373 V410 H730 V373 A28 28 0 0 1 758 345 Z" fill="#d16b38"/>
+    <text x="1110" y="388" text-anchor="middle" class="scenario">Sequences</text>
+    <text x="770" y="455" class="architecture">Recurrent Neural Networks (RNNs)</text>
+    <text x="770" y="496" class="item">Speech and text  ·  LSTM and GRU  ·  Seq2Seq</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="730" y="595" width="760" height="190" rx="28" fill="#ffffff"/>
+    <path d="M758 595 H1462 A28 28 0 0 1 1490 623 V660 H730 V623 A28 28 0 0 1 758 595 Z" fill="#8e5ab5"/>
+    <text x="1110" y="638" text-anchor="middle" class="scenario">Language Models</text>
+    <text x="770" y="705" class="architecture">Transformers</text>
+    <text x="770" y="746" class="item">Attention  ·  BERT and GPT families  ·  Large language models</text>
+  </g>
+</svg>
