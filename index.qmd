@@ -58,4 +58,11 @@ then explore recommendation, HR, multi-label text and network-security applicati
 Select and interpret classification, regression and clustering metrics;
 diagnose underfitting and overfitting; and compare models with cross-validation.
 :::
+
+::: {.session-card}
+### [Sessions 9–10: Introduction to Deep Learning](<Session9-10 Introduction to Deep Learning.ipynb>)
+
+Explore how deep learning relates to machine learning, compare CNNs, RNNs
+and Transformers, and review PyTorch and TensorFlow workflows.
+:::
 :::

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title description">
+  <title id="title">Algorithms, big data and high-performance computing</title>
+  <desc id="description">Three panels show a training loop that updates model weights, many historical input-output examples, and a GPU with parallel processing units for matrix operations.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#172033" flood-opacity="0.12"/>
+    </filter>
+    <marker id="blue-arrow" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto"><path d="M0,0 L16,8 L0,16 Z" fill="#2457d6"/></marker>
+    <marker id="orange-arrow" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto"><path d="M0,0 L16,8 L0,16 Z" fill="#c45b2c"/></marker>
+  </defs>
+  <rect width="1200" height="500" rx="28" fill="#f7f9ff"/>
+  <g filter="url(#shadow)">
+    <rect x="30" y="25" width="360" height="445" rx="25" fill="#ffffff" stroke="#9bb3ef" stroke-width="3"/>
+    <rect x="420" y="25" width="360" height="445" rx="25" fill="#ffffff" stroke="#8cc6a6" stroke-width="3"/>
+    <rect x="810" y="25" width="360" height="445" rx="25" fill="#ffffff" stroke="#c4a8e1" stroke-width="3"/>
+  </g>
+
+  <!-- Learning algorithm: a forward pass followed by error-driven updates. -->
+  <text x="210" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#173b93">ALGORITHMS</text>
+  <text x="67" y="153" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#173b93">INPUT</text>
+  <g stroke="#8aa8ec" stroke-width="3" fill="none">
+    <path d="M105 190 L168 155 M105 190 L168 225 M105 260 L168 155 M105 260 L168 225 M185 155 L247 190 M185 225 L247 190 M185 225 L247 260"/>
+  </g>
+  <g fill="#2457d6" stroke="#ffffff" stroke-width="3">
+    <circle cx="105" cy="190" r="13"/><circle cx="105" cy="260" r="13"/>
+    <circle cx="175" cy="155" r="13"/><circle cx="175" cy="225" r="13"/>
+    <circle cx="254" cy="190" r="13"/><circle cx="254" cy="260" r="13"/>
+  </g>
+  <path d="M270 205 H295" stroke="#2457d6" stroke-width="5" fill="none" marker-end="url(#blue-arrow)"/>
+  <rect x="305" y="176" width="58" height="70" rx="12" fill="#e9efff" stroke="#2457d6" stroke-width="3"/>
+  <text x="334" y="206" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#173b93">LOSS</text>
+  <text x="334" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#173b93">error</text>
+  <path d="M334 253 V306 Q334 322 316 322 H105 Q88 322 88 301 V278" stroke="#c45b2c" stroke-width="5" fill="none" marker-end="url(#orange-arrow)"/>
+  <text x="210" y="307" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#a34922">BACKPROP + UPDATE</text>
+  <text x="210" y="417" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#5c6577">Train deeper networks</text>
+
+  <!-- Historical input-output pairs: many rows of training examples. -->
+  <text x="600" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#236443">BIG DATA</text>
+  <rect x="462" y="121" width="276" height="246" rx="16" fill="#eaf7ef" stroke="#2f855a" stroke-width="3"/>
+  <rect x="462" y="121" width="276" height="48" rx="16" fill="#2f855a"/>
+  <path d="M462 155 H738 M600 121 V367" stroke="#8cc6a6" stroke-width="3"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="531" y="153" font-size="18" font-weight="700" fill="#ffffff">INPUT</text>
+    <text x="669" y="153" font-size="15" font-weight="700" fill="#ffffff">KNOWN OUTPUT</text>
+  </g>
+  <g stroke="#8cc6a6" stroke-width="2">
+    <path d="M462 216 H738 M462 263 H738 M462 310 H738"/>
+  </g>
+  <g fill="#2f855a" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">
+    <text x="531" y="202">x₁</text><text x="669" y="202">y₁</text>
+    <text x="531" y="249">x₂</text><text x="669" y="249">y₂</text>
+    <text x="531" y="296">x₃</text><text x="669" y="296">y₃</text>
+    <text x="531" y="345">···</text><text x="669" y="345">···</text>
+  </g>
+  <text x="600" y="417" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#5c6577">Learn from many examples</text>
+
+  <!-- Accelerator: many small units execute tensor operations in parallel. -->
+  <text x="990" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#633893">HIGH-PERFORMANCE</text>
+  <text x="990" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#633893">COMPUTING</text>
+  <g fill="#e9dafa" stroke="#7c4db3" stroke-width="2">
+    <rect x="851" y="151" width="70" height="70" rx="8"/><rect x="929" y="151" width="70" height="70" rx="8"/>
+    <rect x="851" y="229" width="70" height="70" rx="8"/><rect x="929" y="229" width="70" height="70" rx="8"/>
+  </g>
+  <text x="925" y="329" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#633893">MATRIX OPERATIONS</text>
+  <path d="M1007 220 H1017 V212 L1035 226 L1017 240 V232 H1007 Z" fill="#7c4db3" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="1041" y="153" width="96" height="146" rx="15" fill="#7c4db3" stroke="#ffffff" stroke-width="3"/>
+  <g fill="#f4ecff">
+    <rect x="1054" y="168" width="16" height="17" rx="3"/><rect x="1076" y="168" width="16" height="17" rx="3"/><rect x="1098" y="168" width="16" height="17" rx="3"/>
+    <rect x="1054" y="192" width="16" height="17" rx="3"/><rect x="1076" y="192" width="16" height="17" rx="3"/><rect x="1098" y="192" width="16" height="17" rx="3"/>
+    <rect x="1054" y="216" width="16" height="17" rx="3"/><rect x="1076" y="216" width="16" height="17" rx="3"/><rect x="1098" y="216" width="16" height="17" rx="3"/>
+    <rect x="1054" y="240" width="16" height="17" rx="3"/><rect x="1076" y="240" width="16" height="17" rx="3"/><rect x="1098" y="240" width="16" height="17" rx="3"/>
+  </g>
+  <text x="1089" y="283" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">GPU</text>
+  <text x="990" y="417" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#5c6577">Parallel tensor operations</text>
+</svg>

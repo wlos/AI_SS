@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="880" viewBox="0 0 1600 880" role="img" aria-labelledby="title description">
-  <title id="title">Deep learning application mind map</title>
-  <desc id="description">Deep Learning appears as the root on the left and connects to three application scenarios on the right: images with convolutional neural networks, sequences with recurrent neural networks, and language models with Transformers.</desc>
+  <title id="title">Three Representative Deep Learning Architectures</title>
+  <desc id="description">Deep Learning branches into CNNs, RNNs and Transformers. Each branch lists representative uses; these architectures are not limited to one data type or application.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#f8fafc"/>
@@ -29,7 +29,7 @@
   </defs>
 
   <rect width="1600" height="880" rx="28" fill="url(#background)"/>
-  <text x="76" y="70" class="title">Deep Learning: Three Application Scenarios</text>
+  <text x="76" y="70" class="title">Three Representative Deep Learning Architectures</text>
 
   <path class="connector" stroke="#00857a" marker-end="url(#arrow-teal)" d="M470 420 C585 420, 595 190, 710 190"/>
   <path class="connector" stroke="#d16b38" marker-end="url(#arrow-orange)" d="M470 440 C585 440, 595 440, 710 440"/>
@@ -44,24 +44,24 @@
   <g filter="url(#shadow)">
     <rect x="730" y="95" width="760" height="190" rx="28" fill="#ffffff"/>
     <path d="M758 95 H1462 A28 28 0 0 1 1490 123 V160 H730 V123 A28 28 0 0 1 758 95 Z" fill="#00857a"/>
-    <text x="1110" y="138" text-anchor="middle" class="scenario">Images</text>
-    <text x="770" y="205" class="architecture">Convolutional Neural Networks (CNNs)</text>
-    <text x="770" y="246" class="item">Image classification  ·  Object detection  ·  Image generation</text>
+    <text x="1110" y="138" text-anchor="middle" class="scenario">CNNs</text>
+    <text x="770" y="205" class="architecture">Local filters  ·  Shared weights  ·  Layered features</text>
+    <text x="770" y="246" class="item">Examples: image classification, object detection, generative components</text>
   </g>
 
   <g filter="url(#shadow)">
     <rect x="730" y="345" width="760" height="190" rx="28" fill="#ffffff"/>
     <path d="M758 345 H1462 A28 28 0 0 1 1490 373 V410 H730 V373 A28 28 0 0 1 758 345 Z" fill="#d16b38"/>
-    <text x="1110" y="388" text-anchor="middle" class="scenario">Sequences</text>
-    <text x="770" y="455" class="architecture">Recurrent Neural Networks (RNNs)</text>
-    <text x="770" y="496" class="item">Speech and text  ·  LSTM and GRU  ·  Seq2Seq</text>
+    <text x="1110" y="388" text-anchor="middle" class="scenario">RNNs</text>
+    <text x="770" y="455" class="architecture">Shared recurrent cell  ·  Step-by-step state</text>
+    <text x="770" y="496" class="item">Examples: speech recognition, language modelling, translation</text>
   </g>
 
   <g filter="url(#shadow)">
     <rect x="730" y="595" width="760" height="190" rx="28" fill="#ffffff"/>
     <path d="M758 595 H1462 A28 28 0 0 1 1490 623 V660 H730 V623 A28 28 0 0 1 758 595 Z" fill="#8e5ab5"/>
-    <text x="1110" y="638" text-anchor="middle" class="scenario">Language Models</text>
-    <text x="770" y="705" class="architecture">Transformers</text>
-    <text x="770" y="746" class="item">Attention  ·  BERT and GPT families  ·  Large language models</text>
+    <text x="1110" y="638" text-anchor="middle" class="scenario">Transformers</text>
+    <text x="770" y="705" class="architecture">Self-attention  ·  Parallel token representations</text>
+    <text x="770" y="746" class="item">Examples: language models, translation, image understanding</text>
   </g>
 </svg>

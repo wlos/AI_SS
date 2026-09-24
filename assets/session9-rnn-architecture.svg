@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="450" viewBox="0 0 1200 450" role="img" aria-labelledby="title description">
+  <title id="title">Recurrent neural network unrolled over three time steps</title>
+  <desc id="description">The same recurrent cell processes three ordered inputs in sequence. Its hidden state flows from one step to the next, and each step can produce an output. LSTM and GRU cells add gates to manage memory.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#172033" flood-opacity="0.13"/></filter>
+  </defs>
+  <rect width="1200" height="450" rx="26" fill="#fff8f3"/>
+  <path d="M60 197 H102 V184 L135 205 L102 226 V213 H60 Z M334 197 H468 V184 L505 205 L468 226 V213 H334 Z M706 197 H840 V184 L877 205 L840 226 V213 H706 Z M1078 197 H1105 V184 L1142 205 L1105 226 V213 H1078 Z" fill="#c45b2c" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
+  <g filter="url(#shadow)" fill="#fff1e7" stroke="#d16b38" stroke-width="4">
+    <rect x="140" y="115" width="185" height="180" rx="26"/>
+    <rect x="512" y="115" width="185" height="180" rx="26"/>
+    <rect x="884" y="115" width="185" height="180" rx="26"/>
+  </g>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="232" y="177" font-size="25" font-weight="700" fill="#9b3d1a">RNN CELL</text>
+    <text x="232" y="218" font-size="20" fill="#172033">state h₁</text>
+    <text x="604" y="177" font-size="25" font-weight="700" fill="#9b3d1a">RNN CELL</text>
+    <text x="604" y="218" font-size="20" fill="#172033">state h₂</text>
+    <text x="976" y="177" font-size="25" font-weight="700" fill="#9b3d1a">RNN CELL</text>
+    <text x="976" y="218" font-size="20" fill="#172033">state h₃</text>
+    <text x="232" y="355" font-size="22" font-weight="700" fill="#9b3d1a">input x₁</text>
+    <text x="604" y="355" font-size="22" font-weight="700" fill="#9b3d1a">input x₂</text>
+    <text x="976" y="355" font-size="22" font-weight="700" fill="#9b3d1a">input x₃</text>
+    <text x="232" y="56" font-size="21" fill="#9b3d1a">output y₁</text>
+    <text x="604" y="56" font-size="21" fill="#9b3d1a">output y₂</text>
+    <text x="976" y="56" font-size="21" fill="#9b3d1a">output y₃</text>
+    <text x="600" y="408" font-size="21" fill="#5c6577">One cell and one set of weights are reused at every step; LSTM and GRU add memory gates.</text>
+  </g>
+  <path d="M226 322 V308 H219 L232 288 L245 308 H238 V322 Z M598 322 V308 H591 L604 288 L617 308 H610 V322 Z M970 322 V308 H963 L976 288 L989 308 H982 V322 Z" fill="#c45b2c"/>
+  <path d="M226 110 V92 H219 L232 72 L245 92 H238 V110 Z M598 110 V92 H591 L604 72 L617 92 H610 V110 Z M970 110 V92 H963 L976 72 L989 92 H982 V110 Z" fill="#c45b2c"/>
+</svg>

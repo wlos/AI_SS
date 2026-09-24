@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 90 1200 430" role="img" aria-labelledby="title description">
+  <title id="title">Artificial intelligence transforms an input into an output</title>
+  <desc id="description">A flow diagram showing inputs passing through an AI system to outputs. The AI system may use formulas and rules, an expert system, or machine learning.</desc>
+  <defs>
+    <linearGradient id="ai-panel" x1="0" x2="1">
+      <stop offset="0" stop-color="#2457d6"/>
+      <stop offset="1" stop-color="#5b7fe8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#172033" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="520" rx="28" fill="#f7f9ff"/>
+
+  <g filter="url(#shadow)">
+    <rect x="60" y="150" width="250" height="240" rx="24" fill="#ffffff" stroke="#9bb3ef" stroke-width="3"/>
+    <rect x="425" y="125" width="350" height="290" rx="28" fill="url(#ai-panel)"/>
+    <rect x="890" y="150" width="250" height="240" rx="24" fill="#ffffff" stroke="#9bb3ef" stroke-width="3"/>
+  </g>
+
+  <text x="185" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#173b93">INPUT</text>
+  <text x="185" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#172033">data</text>
+  <text x="185" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#172033">images · sound</text>
+  <text x="185" y="322" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#172033">text · sensor readings</text>
+
+  <text x="600" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#ffffff">AI SYSTEM</text>
+  <rect x="475" y="218" width="250" height="48" rx="12" fill="#ffffff" fill-opacity="0.95"/>
+  <rect x="475" y="282" width="250" height="48" rx="12" fill="#ffffff" fill-opacity="0.95"/>
+  <rect x="475" y="346" width="250" height="48" rx="12" fill="#ffffff" fill-opacity="0.95"/>
+  <text x="600" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#173b93">Formulas and rules</text>
+  <text x="600" y="314" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#173b93">Expert system</text>
+  <text x="600" y="378" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#173b93">Machine learning</text>
+
+  <text x="1015" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#173b93">OUTPUT</text>
+  <text x="1015" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#172033">prediction</text>
+  <text x="1015" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#172033">decision</text>
+  <text x="1015" y="322" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#172033">recommendation</text>
+  <text x="1015" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#172033">action</text>
+
+  <path d="M320 259 H370 V240 L416 270 L370 300 V281 H320 Z" fill="#173b93" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M784 259 H834 V240 L880 270 L834 300 V281 H784 Z" fill="#173b93" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"/>
+  <text x="600" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#173b93">INPUT → AI → OUTPUT</text>
+</svg>
