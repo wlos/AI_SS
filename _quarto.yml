@@ -10,6 +10,12 @@ project:
     - "Session5-6 AI Opportunities.ipynb"
     - "Session8 Machine Learning Evaluation.ipynb"
     - "Session9-10 Introduction to Deep Learning.ipynb"
+    - "Session11 Deep Learning for Image Processing with CNNs.ipynb"
+    - assets/style-transfer/gatys-style-transfer.ipynb
+  resources:
+    - assets/style-transfer/gatys-style-transfer.ipynb
+    - assets/style-transfer/inputs/content.jpg
+    - assets/style-transfer/inputs/style-udnie.jpg
 
 website:
   title: "Artificial Intelligence Skill Set"
@@ -36,6 +42,8 @@ website:
         href: "Session8 Machine Learning Evaluation.ipynb"
       - text: "Sessions 9–10"
         href: "Session9-10 Introduction to Deep Learning.ipynb"
+      - text: "Session 11"
+        href: "Session11 Deep Learning for Image Processing with CNNs.ipynb"
   sidebar:
     style: floating
     search: true
@@ -50,6 +58,7 @@ website:
           - "Session5-6 AI Opportunities.ipynb"
           - "Session8 Machine Learning Evaluation.ipynb"
           - "Session9-10 Introduction to Deep Learning.ipynb"
+          - "Session11 Deep Learning for Image Processing with CNNs.ipynb"
   page-footer:
     left: "Artificial Intelligence Skill Set course materials"
     right:

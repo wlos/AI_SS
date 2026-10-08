@@ -65,4 +65,12 @@ diagnose underfitting and overfitting; and compare models with cross-validation.
 Explore how deep learning relates to machine learning, compare CNNs, RNNs
 and Transformers, and review PyTorch and TensorFlow workflows.
 :::
+
+::: {.session-card}
+### [Session 11: Deep Learning for Image Processing with CNNs](<Session11 Deep Learning for Image Processing with CNNs.ipynb>)
+
+Explore convolution, pooling and CNN architectures; apply image filters,
+train and evaluate a ResNet-18 digit classifier, and compare CPU/GPU inference time.
+Learn how a frozen CNN guides image style transfer through content and style losses.
+:::
 :::
