@@ -73,4 +73,12 @@ Explore convolution, pooling and CNN architectures; apply image filters,
 train and evaluate a ResNet-18 digit classifier, and compare CPU/GPU inference time.
 Learn how a frozen CNN guides image style transfer through content and style losses.
 :::
+
+::: {.session-card}
+### [Session 12: Building and Training CNN Models with PyTorch](<Session12 Building and Training CNN Models with PyTorch.ipynb>)
+
+Build a simple CNN, follow the PyTorch training workflow, evaluate predictions,
+and compare a classifier trained from scratch with a fine-tuned pretrained model
+using the same MNIST samples.
+:::
 :::

@@ -11,8 +11,12 @@ project:
     - "Session8 Machine Learning Evaluation.ipynb"
     - "Session9-10 Introduction to Deep Learning.ipynb"
     - "Session11 Deep Learning for Image Processing with CNNs.ipynb"
+    - "Session12 Building and Training CNN Models with PyTorch.ipynb"
+    - "Session12.1 CNN Feature Blocks and Training Data Preparation.ipynb"
     - assets/style-transfer/gatys-style-transfer.ipynb
   resources:
+    - "Session12.1 CNN Practice.ipynb"
+    - sample_data/mnist_train_small.csv
     - assets/style-transfer/gatys-style-transfer.ipynb
     - assets/style-transfer/inputs/content.jpg
     - assets/style-transfer/inputs/style-udnie.jpg
@@ -44,6 +48,8 @@ website:
         href: "Session9-10 Introduction to Deep Learning.ipynb"
       - text: "Session 11"
         href: "Session11 Deep Learning for Image Processing with CNNs.ipynb"
+      - text: "Session 12"
+        href: "Session12 Building and Training CNN Models with PyTorch.ipynb"
   sidebar:
     style: floating
     search: true
@@ -59,6 +65,7 @@ website:
           - "Session8 Machine Learning Evaluation.ipynb"
           - "Session9-10 Introduction to Deep Learning.ipynb"
           - "Session11 Deep Learning for Image Processing with CNNs.ipynb"
+          - "Session12 Building and Training CNN Models with PyTorch.ipynb"
   page-footer:
     left: "Artificial Intelligence Skill Set course materials"
     right:
