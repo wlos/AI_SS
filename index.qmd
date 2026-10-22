@@ -81,4 +81,12 @@ Build a simple CNN, follow the PyTorch training workflow, evaluate predictions,
 and compare a classifier trained from scratch with a fine-tuned pretrained model
 using the same MNIST samples.
 :::
+
+::: {.session-card}
+### [Session 13: Image Classification and Computer Vision Applications](<Session13 Image Classification and Computer Vision Applications.ipynb>)
+
+Load and transform images, prepare CNN batches, and train a cat and dog classifier.
+Complete the companion practicals on image loading and batching, then explore
+object detection with YOLO and DETR and image generation with GANs and diffusion models.
+:::
 :::

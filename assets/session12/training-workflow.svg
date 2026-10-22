@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="1060" viewBox="0 0 760 1060" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="766" viewBox="0 0 760 766" role="img" aria-labelledby="title desc">
 <title id="title">PyTorch CNN training workflow</title>
-<desc id="desc">For each epoch, process every training batch: clear gradients, forward pass, calculate loss, backward pass and update weights. Validate without gradients, retain the best validation checkpoint, and repeat until the final epoch.</desc>
+<desc id="desc">Main training steps: start an epoch, clear gradients, run a forward pass, calculate loss, run a backward pass and update weights. Repeat for more epochs, then finish training after the final epoch.</desc>
 <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#2457d6"/></marker></defs>
-<rect width="760" height="1060" rx="20" fill="#f4f7ff"/>
+<rect width="760" height="766" rx="20" fill="#f4f7ff"/>
 <g font-family="Arial, sans-serif" text-anchor="middle" fill="#172033">
 <text x="380" y="40" font-size="24" font-weight="bold">Train a CNN with PyTorch</text>
 <rect x="140" y="65" width="480" height="72" rx="10" fill="white" stroke="#dbe4f6" stroke-width="2"/>
@@ -10,42 +10,28 @@
 <text x="380" y="116" font-size="14">model.train()</text>
 <path d="M380 138 V159" stroke="#2457d6" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="140" y="163" width="480" height="72" rx="10" fill="white" stroke="#dbe4f6" stroke-width="2"/>
-<text x="380" y="190" font-size="18" font-weight="bold">Get next training batch</text>
-<text x="380" y="214" font-size="14">Move images and labels to the device</text>
+<text x="380" y="190" font-size="18" font-weight="bold">Clear previous gradients</text>
+<text x="380" y="214" font-size="14">optimiser.zero_grad()</text>
 <path d="M380 236 V257" stroke="#2457d6" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="140" y="261" width="480" height="72" rx="10" fill="white" stroke="#dbe4f6" stroke-width="2"/>
-<text x="380" y="288" font-size="18" font-weight="bold">Clear previous gradients</text>
-<text x="380" y="312" font-size="14">optimiser.zero_grad()</text>
+<text x="380" y="288" font-size="18" font-weight="bold">Forward pass</text>
+<text x="380" y="312" font-size="14">logits = model(images)</text>
 <path d="M380 334 V355" stroke="#2457d6" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="140" y="359" width="480" height="72" rx="10" fill="white" stroke="#dbe4f6" stroke-width="2"/>
-<text x="380" y="386" font-size="18" font-weight="bold">Forward pass</text>
-<text x="380" y="410" font-size="14">logits = model(images)</text>
+<text x="380" y="386" font-size="18" font-weight="bold">Calculate loss</text>
+<text x="380" y="410" font-size="14">loss = criterion(logits, labels)</text>
 <path d="M380 432 V453" stroke="#2457d6" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="140" y="457" width="480" height="72" rx="10" fill="white" stroke="#dbe4f6" stroke-width="2"/>
-<text x="380" y="484" font-size="18" font-weight="bold">Calculate loss</text>
-<text x="380" y="508" font-size="14">loss = criterion(logits, labels)</text>
+<text x="380" y="484" font-size="18" font-weight="bold">Backward pass</text>
+<text x="380" y="508" font-size="14">loss.backward()</text>
 <path d="M380 530 V551" stroke="#2457d6" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="140" y="555" width="480" height="72" rx="10" fill="white" stroke="#dbe4f6" stroke-width="2"/>
-<text x="380" y="582" font-size="18" font-weight="bold">Backward pass</text>
-<text x="380" y="606" font-size="14">loss.backward()</text>
+<text x="380" y="582" font-size="18" font-weight="bold">Update weights</text>
+<text x="380" y="606" font-size="14">optimiser.step()</text>
 <path d="M380 628 V649" stroke="#2457d6" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="140" y="653" width="480" height="72" rx="10" fill="white" stroke="#dbe4f6" stroke-width="2"/>
-<text x="380" y="680" font-size="18" font-weight="bold">Update weights</text>
-<text x="380" y="704" font-size="14">optimiser.step()</text>
-<path d="M380 726 V747" stroke="#2457d6" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="140" y="751" width="480" height="72" rx="10" fill="white" stroke="#dbe4f6" stroke-width="2"/>
-<text x="380" y="778" font-size="18" font-weight="bold">End of training batches</text>
-<text x="380" y="802" font-size="14">Continue until every batch is processed</text>
-<path d="M380 824 V845" stroke="#2457d6" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="140" y="849" width="480" height="72" rx="10" fill="white" stroke="#dbe4f6" stroke-width="2"/>
-<text x="380" y="876" font-size="18" font-weight="bold">Validate and keep best checkpoint</text>
-<text x="380" y="900" font-size="14">model.eval() + torch.no_grad()</text>
-<path d="M380 922 V943" stroke="#2457d6" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="140" y="947" width="480" height="72" rx="10" fill="white" stroke="#dbe4f6" stroke-width="2"/>
-<text x="380" y="974" font-size="18" font-weight="bold">After the final epoch</text>
-<text x="380" y="998" font-size="14">Restore best validation checkpoint; evaluate on test set</text>
-<path d="M620 787 H680 V199 H623" fill="none" stroke="#2457d6" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="706" y="498" font-size="14" transform="rotate(90 706 498)">More batches</text>
-<path d="M140 885 H70 V101 H137" fill="none" stroke="#2457d6" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="44" y="498" font-size="14" transform="rotate(-90 44 498)">More epochs</text>
+<text x="380" y="680" font-size="18" font-weight="bold">Training complete</text>
+<text x="380" y="704" font-size="14">Finish after the final epoch</text>
+<path d="M140 591 H70 V101 H137" fill="none" stroke="#2457d6" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="44" y="346" font-size="14" transform="rotate(-90 44 346)">More epochs</text>
 </g></svg>

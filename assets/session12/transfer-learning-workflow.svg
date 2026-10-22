@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="1000" viewBox="0 0 920 1000" role="img" aria-labelledby="title desc">
+<title id="title">Transfer learning with a frozen ResNet18 backbone</title>
+<desc id="desc">Load pretrained weights, freeze existing parameters, replace the head, prepare inputs and device, set evaluation and training modes, configure Adam with trainable parameters and a learning rate of 0.001, then train the head for two epochs.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#2457d6"/></marker></defs>
+<rect width="920" height="1000" rx="20" fill="#f4f7ff"/>
+<g font-family="Arial, sans-serif" text-anchor="middle" fill="#172033">
+<text x="460" y="43" font-size="25" font-weight="bold">Transfer learning: train a new classification head</text>
+<rect x="90" y="72" width="740" height="100" rx="12" fill="#e8f2ff" stroke="#d0dced" stroke-width="2"/>
+<text x="460" y="100" font-size="20" font-weight="bold">1. Load pretrained ResNet18</text>
+<text x="460" y="127" font-size="16">resnet18(weights=ResNet18_Weights.DEFAULT)</text>
+<text x="460" y="150" font-size="16">Start with ImageNet weights</text>
+<path d="M460 173 V194" stroke="#2457d6" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="90" y="200" width="740" height="100" rx="12" fill="#e8f2ff" stroke="#d0dced" stroke-width="2"/>
+<text x="460" y="228" font-size="20" font-weight="bold">2. Freeze the existing model parameters</text>
+<text x="460" y="255" font-size="16">parameter.requires_grad = False</text>
+<text x="460" y="278" font-size="16">The pretrained backbone keeps its learned weights</text>
+<path d="M460 301 V322" stroke="#2457d6" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="90" y="328" width="740" height="100" rx="12" fill="#e8f2ff" stroke="#d0dced" stroke-width="2"/>
+<text x="460" y="356" font-size="20" font-weight="bold">3. Replace the classification head</text>
+<text x="460" y="383" font-size="16">fc = nn.Linear(head_input_features, NUM_CLASSES)</text>
+<text x="460" y="406" font-size="16">NUM_CLASSES = 10; new head parameters are trainable</text>
+<path d="M460 429 V450" stroke="#2457d6" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="90" y="456" width="740" height="100" rx="12" fill="#e8f2ff" stroke="#d0dced" stroke-width="2"/>
+<text x="460" y="484" font-size="20" font-weight="bold">4. Prepare model and inputs</text>
+<text x="460" y="511" font-size="16">transfer_model.to(device); images and labels on device</text>
+<text x="460" y="534" font-size="16">Greyscale to RGB; pretrained_weights.transforms()</text>
+<path d="M460 557 V578" stroke="#2457d6" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="90" y="584" width="740" height="100" rx="12" fill="#eaf6ee" stroke="#d0dced" stroke-width="2"/>
+<text x="460" y="612" font-size="20" font-weight="bold">5. Set layer behaviour before training</text>
+<text x="460" y="639" font-size="16">transfer_model.eval(); transfer_model.fc.train()</text>
+<text x="460" y="662" font-size="16">Keep backbone BatchNorm statistics fixed; train the head</text>
+<path d="M460 685 V706" stroke="#2457d6" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="90" y="712" width="740" height="100" rx="12" fill="#eaf6ee" stroke="#d0dced" stroke-width="2"/>
+<text x="460" y="740" font-size="20" font-weight="bold">6. Configure the optimiser and training duration</text>
+<text x="460" y="767" font-size="16">Adam: only parameters where requires_grad is True</text>
+<text x="460" y="790" font-size="16">lr = 0.001; HEAD_EPOCHS = 2</text>
+<path d="M460 813 V834" stroke="#2457d6" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="90" y="840" width="740" height="100" rx="12" fill="#eaf6ee" stroke="#d0dced" stroke-width="2"/>
+<text x="460" y="868" font-size="20" font-weight="bold">7. Train the new head for each epoch</text>
+<text x="460" y="895" font-size="16">zero_grad() → forward → loss → backward() → step()</text>
+<text x="460" y="918" font-size="16">Update only the new head; keep the backbone frozen</text>
+<text x="460" y="972" font-size="15">Blue: model and input settings · Green: training settings and updates</text>
+</g></svg>
