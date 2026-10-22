@@ -76,7 +76,7 @@ website:
           - "Session9-10 Introduction to Deep Learning.ipynb"
           - "Session11 Deep Learning for Image Processing with CNNs.ipynb"
           - "Session12 Building and Training CNN Models with PyTorch.ipynb"
-          - text: "Session 13"
+          - text: "Session 13: Image Classification and Computer Vision Applications"
             href: "Session13 Image Classification and Computer Vision Applications.ipynb"
   page-footer:
     left: "Artificial Intelligence Skill Set course materials"
