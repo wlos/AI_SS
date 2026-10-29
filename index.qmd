@@ -89,4 +89,12 @@ Load and transform images, prepare CNN batches, and train a cat and dog classifi
 Complete the companion practicals on image loading and batching, then explore
 object detection with YOLO and DETR and image generation with GANs and diffusion models.
 :::
+
+::: {.session-card}
+### [Sessions 14–15: Sequence Models and Transformer Applications](<Session14-15 Sequence Models and Transformer Applications.ipynb>)
+
+Follow text from tokens and embeddings to learned contextual representations.
+Explore attention, Transformers and language-model architectures, then fine-tune
+DistilBERT for support ticket classification using Hugging Face.
+:::
 :::

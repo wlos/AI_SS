@@ -1,0 +1,81 @@
+text,category,split
+My account is locked after several failed sign-in attempts.,Account access,train
+I forgot my password and need to reset it.,Account access,train
+The authentication code never arrives on my phone.,Account access,train
+My password reset link has expired.,Account access,train
+I cannot log in with my new username.,Account access,train
+My account was disabled after the holidays.,Account access,train
+The sign-in page rejects my correct password.,Account access,train
+I lost the phone used for two-factor authentication.,Account access,train
+Please unlock my student account.,Account access,train
+My security questions are no longer accepted.,Account access,train
+I need to change the email address used for account recovery.,Account access,train
+The login system says my credentials are invalid.,Account access,train
+My temporary password fails at the sign-in screen.,Account access,validation
+I replaced my phone and cannot approve login requests.,Account access,validation
+The account recovery form cannot verify my identity.,Account access,validation
+I need help setting up my authentication app.,Account access,validation
+The portal says my user account has been suspended.,Account access,test
+I am stuck in a loop asking me to verify my identity.,Account access,test
+I cannot remember the password for my campus account.,Account access,test
+The one-time login code is rejected even when entered immediately.,Account access,test
+The laptop screen is cracked after a fall.,Hardware,train
+My keyboard has three keys that do not work.,Hardware,train
+The desktop computer will not power on.,Hardware,train
+The laptop battery is swollen.,Hardware,train
+The monitor has a permanent black line across it.,Hardware,train
+My mouse button is physically stuck.,Hardware,train
+The charging socket is loose inside the laptop.,Hardware,train
+The cooling fan makes a loud grinding noise.,Hardware,train
+The printer has a broken paper tray.,Hardware,train
+My webcam lens is damaged.,Hardware,train
+The USB socket has a bent connector.,Hardware,train
+The computer case smells burnt when powered on.,Hardware,train
+My display flickers when the damaged cable moves.,Hardware,validation
+The touchpad has stopped responding after a liquid spill.,Hardware,validation
+The laptop hinge has snapped.,Hardware,validation
+The headset microphone cable is torn.,Hardware,validation
+The space bar has fallen off the keyboard.,Hardware,test
+My laptop shuts down when its battery is unplugged from the charger.,Hardware,test
+The power button is jammed and cannot be pressed.,Hardware,test
+The monitor glass is shattered and needs replacement.,Hardware,test
+The spreadsheet application crashes when I open a workbook.,Software,train
+I cannot install the required graphics editor.,Software,train
+The word processor freezes when saving a document.,Software,train
+The application update fails with an installer error.,Software,train
+My browser extension prevents pages from displaying.,Software,train
+The PDF reader closes whenever I search a document.,Software,train
+The video editor reports a missing software component.,Software,train
+I need the programming editor installed for class.,Software,train
+The calendar app displays duplicate appointments.,Software,train
+The presentation software cannot export a slide deck.,Software,train
+My email application crashes when adding an attachment.,Software,train
+The database program fails to launch after an update.,Software,train
+The antivirus application cannot complete its update.,Software,validation
+The drawing program loses my selected colour settings.,Software,validation
+A required application license has expired.,Software,validation
+The installer says an incompatible version is already present.,Software,validation
+The text editor hangs whenever I open its preferences.,Software,test
+My spreadsheet formulas stopped calculating after an application update.,Software,test
+The design application reports a missing plugin at startup.,Software,test
+The media player refuses to open a supported video format.,Software,test
+My laptop cannot connect to the campus Wi-Fi.,Network,train
+The classroom internet connection drops every few minutes.,Network,train
+The wired network socket in this room has no connection.,Network,train
+All websites time out on the campus network.,Network,train
+The VPN disconnects before I can reach the shared drive.,Network,train
+Wi-Fi signal strength is too weak in the library.,Network,train
+The network printer cannot be reached from any classroom computer.,Network,train
+The internet is very slow on every device in the lab.,Network,train
+My device connects to Wi-Fi but has no internet access.,Network,train
+The campus network name is missing from the available connections.,Network,train
+The computer cannot obtain a network address.,Network,train
+The shared server is unreachable from our building.,Network,train
+The ethernet connection disconnects during online classes.,Network,validation
+The guest wireless network has stopped accepting connections.,Network,validation
+The network cannot resolve any website names.,Network,validation
+Remote access to the campus network times out.,Network,validation
+All computers in our room lost internet access at the same time.,Network,test
+My tablet repeatedly loses its wireless connection on campus.,Network,test
+The lab switch shows no active network connections.,Network,test
+I can access local files but cannot reach any online service.,Network,test
