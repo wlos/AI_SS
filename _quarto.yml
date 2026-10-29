@@ -19,6 +19,7 @@ project:
     - "Session13.2 Preparing Image Batches for a CNN Model.ipynb"
     - assets/style-transfer/gatys-style-transfer.ipynb
   resources:
+    - "Session14-15 Support Ticket Classification Practice.ipynb"
     - "Session13.3 ResNet18 Cat and Dog Classification.ipynb"
     - "Session13.2 Image Batches Practice.ipynb"
     - "Session13.1 Load Digit Images Practice.ipynb"
