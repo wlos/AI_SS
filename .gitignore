@@ -12,3 +12,6 @@ archive/
 # Local Codex project instructions and sandbox settings
 AGENTS.md
 .codex/
+
+# Local Transformer model files
+/transformer/
