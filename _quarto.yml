@@ -19,6 +19,7 @@ project:
     - "13-Computer-Vision/Session13.2 Preparing Image Batches for a CNN Model.ipynb"
     - "14-15-Sequence-Models-and-Transformers/Session14-15 Sequence Models and Transformer Applications.ipynb"
   resources:
+    - mindmap.html
     - "14-15-Sequence-Models-and-Transformers/practice/Session14-15 Support Ticket Classification Practice.ipynb"
     - "13-Computer-Vision/practice/Session13.3 ResNet18 Cat and Dog Classification.ipynb"
     - "13-Computer-Vision/practice/Session13.2 Image Batches Practice.ipynb"
@@ -47,6 +48,8 @@ website:
     left:
       - text: "Home"
         href: index.qmd
+      - text: "Mindmap"
+        href: mindmap.html
       - text: "Session 1"
         href: 01-Introduction-to-AI/Session_1_Introduction_to_AI.qmd
       - text: "Session 2"
@@ -75,6 +78,8 @@ website:
     contents:
       - text: "Home"
         href: index.qmd
+      - text: "Course Mindmap"
+        href: mindmap.html
       - section: "Course Sessions"
         contents:
           - text: "Session 1: Introduction to AI"

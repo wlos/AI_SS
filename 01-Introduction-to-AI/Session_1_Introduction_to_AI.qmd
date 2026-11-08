@@ -1,9 +1,3 @@
----
-title: "Session 1 Introduction to AI"
-aliases:
-  - /Session_1_Introduction_to_AI.html
----
-
 # Session 1 Introduction to AI
 
 ## Learning goals
@@ -91,7 +85,7 @@ Modern AI often combines ideas from more than one school, but deep learning is m
 
 Before studying neural networks, students need a clear picture of what machine learning is trying to achieve.
 
-![Fundamentals of machine learning](images/machine-learning-basics.svg)
+![Fundamentals of machine learning](images/machine-learning-basics.png)
 
 ### 3.1 The basic system
 
@@ -119,7 +113,7 @@ The two most important beginner categories are:
 - uses unlabelled data;
 - common tasks include **clustering** and **dimensionality reduction**.
 
-![Supervised and unsupervised learning](images/supervised-vs-unsupervised.svg)
+![Supervised and unsupervised learning](images/supervised-vs-unsupervised.png)
 
 ### 3.3 The key terms to remember
 

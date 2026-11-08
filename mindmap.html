@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Skill Set — Interactive Course Mindmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #ffffff;
+}
+.markmap {
+  width: 100vw;
+  height: 100vh;
+}
+.markmap > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.nav-header {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #d0d7de;
+  border-radius: 24px;
+  color: #1f2937;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+.nav-btn:hover {
+  background: #f3f4f6;
+  border-color: #2563eb;
+  color: #2563eb;
+  transform: translateY(-1px);
+}
+.nav-title {
+  padding: 6px 14px;
+  background: rgba(243, 244, 246, 0.95);
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4b5563;
+}
+@media (max-width: 600px) {
+  .nav-title {
+    display: none;
+  }
+}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+</head>
+<body>
+<div class="nav-header">
+  <a href="index.html" class="nav-btn">← Back to Course</a>
+  <span class="nav-title">🗺️ Interactive Mindmap · Pan & Zoom · Click nodes to expand/collapse</span>
+</div>
+
+<div class="markmap">
+<script type="text/template">
+# Artificial Intelligence Skill Set
+
+## 01 Introduction to AI
+- [Overview: AI, ML, & DL](01-Introduction-to-AI/Session_1_Introduction_to_AI.html#1-overview-ai-ml-and-dl)
+  - Broad goal of simulating intelligence
+  - Data-driven learning vs rule-based systems
+  - Neural networks & hierarchical representations
+- [History & Schools of AI](01-Introduction-to-AI/Session_1_Introduction_to_AI.html#2-a-short-history-of-ai)
+  - Symbolism (Logic, Expert Systems)
+  - Behaviourism (Perception & Feedback)
+  - Connectionism (Artificial Neural Units)
+- [Fundamentals of Machine Learning](01-Introduction-to-AI/Session_1_Introduction_to_AI.html#3-fundamentals-of-machine-learning)
+  - Supervised Learning (Labels, Decision Boundaries)
+  - Unsupervised Learning (Clustering, Patterns)
+  - Features, Loss, & Generalisation
+- [Artificial Neurons & Perceptrons](01-Introduction-to-AI/Session_1_Introduction_to_AI.html#4-fundamentals-of-neural-networks)
+  - Inputs (x), Weights (w), & Bias (b)
+  - Weighted Sum: z = Σ wᵢxᵢ + b
+  - Activation Functions: ReLU, Sigmoid, Tanh
+  - Forward Propagation (Predictions)
+  - Backward Propagation (Gradients & Loss Reduction)
+
+## 02 Data for Machine Learning
+- [Data Categories](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html)
+  - Structured Data (CSV, Excel, SQLite DB)
+  - Unstructured Data (Text, Images)
+  - Feature Types (Numerical, Categorical, Target)
+- [Cleansing & Preprocessing](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html)
+  - Missing Value Imputation
+  - Standardisation & Min-Max Scaling
+  - Categorical Encoding (One-Hot, Ordinal)
+- [Bias & Fairness](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html)
+  - Historical & Representation Bias
+  - Fairness Metrics in pandas
+- [Dataset Splitting](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html)
+  - Train/Validation/Test Partitions
+  - Stratified Splitting
+
+## 03 Machine Learning Essentials
+- [Classical ML Algorithms](03-Machine-Learning-Essentials/Session3%20Essentials%20of%20ML%20and%20DL%20Technologies.html)
+  - Linear & Logistic Regression
+  - K-Nearest Neighbours (KNN)
+  - Decision Trees & Ensembles
+  - Random Forests & Gradient Boosting
+- [scikit-learn Pipelines](03-Machine-Learning-Essentials/Session3%20Essentials%20of%20ML%20and%20DL%20Technologies.html)
+  - Chaining Preprocessors & Estimators
+  - Preventing Data Leakage
+
+## 04 Machine Learning Case Studies
+- [End-to-End Real Datasets](04-Machine-Learning-Case-Studies/Session4%20Machine%20Learning%20Case%20Studies.html)
+  - California Housing (Continuous Price Regression)
+  - Diabetes Progression (Health Feature Regression)
+  - Linnerud Exercise (Multi-Output Regression)
+  - MNIST Handwritten Digits (Multiclass Classification)
+  - Wine Dataset (K-means Unsupervised Clustering)
+
+## 05–06 AI Opportunities
+- [Opportunity Framing](05-06-AI-Opportunities/Session5-6%20AI%20Opportunities.html)
+  - Four-part Opportunity Framework: Problem, Data, Methods, Value
+- [Industry Applications](05-06-AI-Opportunities/Session5-6%20AI%20Opportunities.html)
+  - Recommender Systems (Collaborative & Content-based)
+  - HR Attrition Predictor (Tabular Classification)
+  - Support Ticket Routing (Multi-label Text)
+  - KDD Cup Network Security (Intrusion Detection)
+- [Responsible AI Governance](05-06-AI-Opportunities/Session5-6%20AI%20Opportunities.html)
+  - Fairness, Privacy, Safety & Continuous Monitoring
+
+## 08 Machine Learning Evaluation
+- [Classification Metrics](08-Machine-Learning-Evaluation/Session8%20Machine%20Learning%20Evaluation.html)
+  - Confusion Matrix (TP, TN, FP, FN)
+  - Accuracy, Precision, Recall, F1 Score
+  - ROC Curve & Area Under the Curve (AUC)
+- [Regression Diagnostics](08-Machine-Learning-Evaluation/Session8%20Machine%20Learning%20Evaluation.html)
+  - MAE, MSE, RMSE, R²
+- [Validation Strategies](08-Machine-Learning-Evaluation/Session8%20Machine%20Learning%20Evaluation.html)
+  - Bias-Variance Tradeoff (Overfitting vs Underfitting)
+  - K-Fold Cross-Validation
+
+## 09–10 Deep Learning Fundamentals
+- [Deep Neural Networks](09-10-Deep-Learning/Session9-10%20Introduction%20to%20Deep%20Learning.html)
+  - Multilayer Perceptron (MLP)
+  - Loss Functions (Cross-Entropy, MSE)
+  - Optimisers (SGD, Adam, Learning Rate)
+- [Core Architecture Families](09-10-Deep-Learning/Session9-10%20Introduction%20to%20Deep%20Learning.html)
+  - Convolutional Networks (Spatial Grid Features)
+  - Recurrent Networks (Sequential Memory)
+  - Transformers (Attention-based Representation)
+- [Framework Ecosystem](09-10-Deep-Learning/Session9-10%20Introduction%20to%20Deep%20Learning.html)
+  - PyTorch & TensorFlow / Keras
+
+## 11 CNN Image Processing & Style Transfer
+- [Convolutional Mechanisms](11-CNN-Image-Processing/Session11%20Deep%20Learning%20for%20Image%20Processing%20with%20CNNs.html)
+  - Filters & Feature Maps
+  - Padding & Strides
+  - Pooling Layers (Max vs Average Pooling)
+- [CNN Architecture Evolution](11-CNN-Image-Processing/Session11%20Deep%20Learning%20for%20Image%20Processing%20with%20CNNs.html)
+  - LeNet-5, AlexNet, VGG, ResNet Residual Blocks
+- [Gatys Neural Style Transfer](11-CNN-Image-Processing/gatys-style-transfer.html)
+  - Content Representation & Content Loss
+  - Style Representation via Gram Matrix
+  - Iterative Image Synthesis via Backpropagation
+
+## 12 Building & Training CNNs with PyTorch
+- [PyTorch Model Development](12-Building-and-Training-CNNs/Session12%20Building%20and%20Training%20CNN%20Models%20with%20PyTorch.html)
+  - Subclassing nn.Module
+  - Building Convolutional & Fully-Connected Layers
+  - Forward Pass Definition
+  - Complete PyTorch Training & Validation Loop
+- [Model Deployment](12-Building-and-Training-CNNs/Session12%20Building%20and%20Training%20CNN%20Models%20with%20PyTorch.html)
+  - Model Persistence (.pt / .pth)
+  - TorchScript Compilation & Inference
+
+## 13 Computer Vision Applications
+- [Vision Data Pipelines](13-Computer-Vision/Session13%20Image%20Classification%20and%20Computer%20Vision%20Applications.html)
+  - Custom Dataset Classes
+  - Image Augmentations & Normalisation Transforms
+  - DataLoader Batching & Workers
+- [Transfer Learning](13-Computer-Vision/Session13%20Image%20Classification%20and%20Computer%20Vision%20Applications.html)
+  - Fine-tuning Pretrained ResNet-18
+  - Freezing Feature Extractors & Training Classification Heads
+- [Modern Vision Frontiers](13-Computer-Vision/Session13%20Image%20Classification%20and%20Computer%20Vision%20Applications.html)
+  - Object Detection (YOLO, DETR)
+  - Generative Vision (GANs, Diffusion Models)
+
+## 14–15 Sequence Models & Transformers
+- [Sequence Representation](14-15-Sequence-Models-and-Transformers/Session14-15%20Sequence%20Models%20and%20Transformer%20Applications.html)
+  - Tokenisation (WordPiece, Byte-Pair Encoding)
+  - Token Embeddings & Positional Encodings
+  - Recurrent Architectures (RNN, LSTM, GRU)
+- [Transformer Architecture](14-15-Sequence-Models-and-Transformers/Session14-15%20Sequence%20Models%20and%20Transformer%20Applications.html)
+  - Self-Attention Mechanism: Q, K, V
+  - Multi-Head Scaled Dot-Product Attention
+  - Encoder-Only (BERT, DistilBERT)
+  - Decoder-Only (GPT Family)
+  - Encoder-Decoder (T5, BART)
+- [Hugging Face Practical](14-15-Sequence-Models-and-Transformers/Session14-15%20Sequence%20Models%20and%20Transformer%20Applications.html)
+  - Fine-tuning DistilBERT for IT Support Ticket Classification
+  - Accuracy, F1 Evaluation & Production Inference
+</script>
+</div>
+</body>
+</html>

@@ -10,47 +10,9 @@ page-layout: full
 
 Welcome to the **Artificial Intelligence Skill Set** curriculum. A practical, code-first course exploring the full landscape of modern Artificial Intelligence, from foundational data preparation and classical machine learning to convolutional neural networks with PyTorch and Transformer models with Hugging Face.
 
-Explore our interactive roadmap: [Mindmap of the Course](http://soshnikov.com/courses/ai-for-beginners/mindmap.html)
+🗺️ **Interactive Roadmap**: Explore our interactive [Mindmap of the Course](mindmap.html) for a zoomable, bird's-eye view of all curriculum topics.
 
-## What You'll Build {#what-youll-build}
-
-::: {.info-stack}
-::: {.info-card}
-#### 🎯 Core Competencies
-- **Data & Feature Engineering**: Prepare structured tabular, text, and image datasets, handling missing values, encoding, and bias mitigation.
-- **Applied Machine Learning**: Build, evaluate, and tune regression, classification, and unsupervised clustering pipelines with scikit-learn.
-- **Deep Learning & Computer Vision**: Construct custom CNN architectures, train PyTorch vision classifiers, and apply transfer learning with pretrained ResNet models.
-- **Modern NLP & Transformers**: Master tokenisation, embeddings, and self-attention, fine-tuning DistilBERT and GPT-2 models with Hugging Face.
-- **Responsible AI & Opportunity Framing**: Frame real-world AI use cases balancing capability, ethical governance, safety, and continuous monitoring.
-:::
-
-::: {.info-card}
-#### 🏗️ Practical Projects
-- **California Housing Valuation Engine**: Multi-feature regression model with feature scaling, cross-validation, and error diagnostics.
-- **MNIST Digit Classifier**: Multi-class visual classification comparing classical algorithms against PyTorch convolutional neural networks.
-- **Gatys Neural Style Transfer**: Artistic image synthesis blending content and style representations using convolutional feature maps.
-- **ResNet-18 Transfer Learning Classifier**: End-to-end PyTorch image dataset loader, augmentations, and transfer-learning fine-tuning.
-- **Support Ticket Transformer Classifier**: Fine-tuned DistilBERT transformer predicting IT support query categories with Hugging Face.
-:::
-
-::: {.info-card}
-#### 🏢 Industry Applications
-Manufacturing & Predictive Maintenance · Healthcare Diagnostics · FinTech & Fraud Detection · E-Commerce Recommendations · IT Service Desk Automation
-:::
-:::
-
-## Career Impact {#career-impact}
-
-::: {.info-stack}
-::: {.info-card}
-#### 💼 Professional Pathways & Roles
-- **Technical Roles**: Machine Learning Engineer · Applied AI Developer · Computer Vision Engineer · Data Scientist · AI Solutions Specialist
-- **Industry Sectors**: Technology & Cloud Services · Banking & FinTech · Healthcare Technology · E-Commerce & Retail · Public Sector & Education
-- **Portfolio Projects**: Production scikit-learn pipelines · Custom PyTorch vision models · Pretrained ResNet transfer learning · Fine-tuned Hugging Face transformer classifiers
-:::
-:::
-
-## Content {#content}
+## 🧭 Course Navigation {#course-navigation}
 
 The course is organised into modular sessions located directly under the repository root. Supplementary lectures are grouped within their respective session folders, and practice notebook entries are integrated directly into each companion lecture.
 
@@ -68,7 +30,84 @@ The course is organised into modular sessions located directly under the reposit
 | 👁️ [13](<13-Computer-Vision/Session13 Image Classification and Computer Vision Applications.ipynb>) | [Image Classification and Computer Vision Applications](<13-Computer-Vision/Session13 Image Classification and Computer Vision Applications.ipynb>) | Vision Workflows & Advanced Models | Datasets & Transforms · DataLoader Batches · Transfer Learning with ResNet18 · YOLO & DETR Object Detection · GANs & Diffusion |
 | 🤖 [14–15](<14-15-Sequence-Models-and-Transformers/Session14-15 Sequence Models and Transformer Applications.ipynb>) | [Sequence Models and Transformer Applications](<14-15-Sequence-Models-and-Transformers/Session14-15 Sequence Models and Transformer Applications.ipynb>) | NLP & Transformer Fine-tuning | Tokenisation & Embeddings · Self-Attention · Encoder vs Decoder Architectures · DistilBERT & GPT-2 · Hugging Face Ticket Classification |
 
-## Getting Started {#getting-started}
+## 🎯 Core Competencies {#core-competencies}
+
+::: {.info-stack}
+::: {.info-card}
+#### 📊 Data & Feature Engineering
+Prepare structured tabular, text, and image datasets; handle missing values, encoding, and feature scaling; detect and mitigate data bias.
+:::
+
+::: {.info-card}
+#### ⚙️ Applied Machine Learning
+Train, tune, and evaluate supervised regression, classification, and unsupervised clustering workflows using scikit-learn best practices.
+:::
+
+::: {.info-card}
+#### 👁️ Deep Learning & Computer Vision
+Construct convolutional feature extractors, train PyTorch vision classifiers from scratch, and fine-tune pretrained ResNet-18 models.
+:::
+
+::: {.info-card}
+#### 🤖 Modern NLP & Transformers
+Master tokenisation, dense embeddings, and self-attention; fine-tune DistilBERT and GPT-2 models using Hugging Face for text classification.
+:::
+
+::: {.info-card}
+#### 🛡️ Responsible AI & Opportunity Framing
+Systematically frame production AI opportunities while ensuring fairness, privacy, safety, interpretability, and continuous governance.
+:::
+:::
+
+## 🏗️ Practical Projects {#practical-projects}
+
+::: {.info-stack}
+::: {.info-card}
+#### 🏡 California Housing Valuation Engine
+Build a multi-feature regression pipeline with scikit-learn, incorporating numerical transformations, cross-validation, and residual diagnostics.
+:::
+
+::: {.info-card}
+#### 🔢 MNIST Handwritten Digit Classifier
+Implement multi-class visual recognition, benchmarking classical ML algorithms against custom PyTorch convolutional neural networks.
+:::
+
+::: {.info-card}
+#### 🎨 Gatys Neural Style Transfer Studio
+Synthesise artistic images by optimising content and Gram-matrix style loss representations extracted from deep convolutional layers.
+:::
+
+::: {.info-card}
+#### 🐕 ResNet-18 Transfer Learning Classifier
+Build an end-to-end PyTorch pipeline with custom image transforms, DataLoader batching, and transfer learning for high-accuracy image classification.
+:::
+
+::: {.info-card}
+#### 🎫 Support Ticket Transformer Classifier
+Fine-tune a pretrained DistilBERT transformer on real-world customer service queries using Hugging Face datasets, trainers, and evaluation metrics.
+:::
+:::
+
+## 💼 Career Impact {#career-impact}
+
+::: {.info-stack}
+::: {.info-card}
+#### 💼 Technical Roles
+Machine Learning Engineer · Applied AI Developer · Computer Vision Engineer · Data Scientist · AI Solutions Specialist
+:::
+
+::: {.info-card}
+#### 🏢 Industry Sectors
+Technology & Cloud Services · Banking & FinTech · Healthcare Technology · E-Commerce & Retail · Public Sector & Education
+:::
+
+::: {.info-card}
+#### 📁 Portfolio Projects
+Production scikit-learn pipelines · Custom PyTorch vision models · Pretrained ResNet transfer learning · Fine-tuned Hugging Face transformer classifiers
+:::
+:::
+
+## 🚀 Getting Started {#getting-started}
 
 ::: {.info-stack}
 ::: {.info-card}
@@ -87,7 +126,7 @@ Clone the repository and set up a Python 3.10+ virtual environment with `torch`,
 :::
 :::
 
-## Other Curricula {#other-curricula}
+## 🎓 Other Curricula {#other-curricula}
 
 ::: {.info-stack}
 ::: {.info-card}

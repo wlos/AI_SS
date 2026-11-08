@@ -10,15 +10,16 @@
 [![GitHub Forks](https://img.shields.io/github/forks/wlos/AI_SS?style=social)](https://github.com/wlos/AI_SS/network/members)
 [![GitHub Stars](https://img.shields.io/github/stars/wlos/AI_SS?style=social)](https://github.com/wlos/AI_SS/stargazers)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/wlos/AI_SS/main)
+[![Gitter](https://img.shields.io/badge/chat-on%20gitter-46BC99.svg)](https://github.com/wlos/AI_SS/discussions)
 
 ![Artificial Intelligence Skill Set Roadmap](images/ai-skill-set-banner.png)
 
 Welcome to the **Artificial Intelligence Skill Set** curriculum. This course provides vocational learners and practitioners with practical foundations in artificial intelligence and hands-on machine learning. Through guided lecture notebooks, interactive visualisations, and hands-on laboratory exercises, students explore end-to-end data preparation, classical machine learning algorithms, deep learning fundamentals, computer vision with convolutional neural networks, and fine-tuning modern Transformer models.
 
 - 🌐 **Course Website**: <https://wlos.github.io/AI_SS/>
-- 🗺️ **Interactive Roadmap**: [Mindmap of the Course](http://soshnikov.com/courses/ai-for-beginners/mindmap.html)
+- 🗺️ **Interactive Roadmap**: [Mindmap of the Course](mindmap.html) · [Online Mindmap](https://wlos.github.io/AI_SS/mindmap.html)
 
-## What You'll Build
+## 🛠️ What You'll Build
 
 ### 🎯 Core Competencies
 
@@ -40,13 +41,13 @@ Welcome to the **Artificial Intelligence Skill Set** curriculum. This course pro
 
 Manufacturing & Predictive Maintenance · Healthcare Diagnostics · FinTech & Fraud Detection · E-Commerce Recommendations · IT Service Desk Automation
 
-## Career Impact
+## 💼 Career Impact
 
 - **Technical Roles**: Machine Learning Engineer · Applied AI Developer · Computer Vision Engineer · Data Scientist · AI Solutions Specialist
 - **Industry Sectors**: Technology & Cloud Services · Banking & FinTech · Healthcare Technology · E-Commerce & Retail · Public Sector & Education
 - **Portfolio Projects**: Production scikit-learn pipelines · Custom PyTorch vision models · Pretrained ResNet transfer learning · Fine-tuned Hugging Face transformer classifiers
 
-## Content
+## 📚 Content
 
 The course is organised into modular sessions located directly under the repository root. Supplementary lectures are grouped within their respective session folders, and practice notebook entries are integrated directly into each companion lecture.
 
@@ -64,13 +65,13 @@ The course is organised into modular sessions located directly under the reposit
 | 👁️ [13](13-Computer-Vision) | [Image Classification and Computer Vision Applications](13-Computer-Vision) | Vision Workflows & Advanced Models | Datasets & Transforms · DataLoader Batches · Transfer Learning with ResNet18 · YOLO & DETR Object Detection · GANs & Diffusion |
 | 🤖 [14–15](14-15-Sequence-Models-and-Transformers) | [Sequence Models and Transformer Applications](14-15-Sequence-Models-and-Transformers) | NLP & Transformer Fine-tuning | Tokenisation & Embeddings · Self-Attention · Encoder vs Decoder Architectures · DistilBERT & GPT-2 · Hugging Face Ticket Classification |
 
-## Getting Started
+## 🚀 Getting Started
 
-### Course Website
+### 🌐 Course Website
 
 You can study all course notes and visual walk-throughs online without installing software by visiting the [Course Website](https://wlos.github.io/AI_SS/).
 
-### Hands-on Activities in Google Colab
+### ☁️ Hands-on Activities in Google Colab
 
 Every practice notebook includes an **Open in Colab** link inside the corresponding lecture. In Colab:
 
@@ -78,7 +79,7 @@ Every practice notebook includes an **Open in Colab** link inside the correspond
 2. Select an appropriate runtime (a CPU runtime is sufficient for Sessions 12 and 13.1–13.2; select a T4 GPU runtime for Session 13.3 and Sessions 14–15).
 3. Run the notebook from top to bottom. Each notebook automatically fetches required dataset files and installs supplementary packages, without requiring a local repository checkout.
 
-### Running Locally
+### 💻 Running Locally
 
 To work with the notebooks and code on your local computer:
 
@@ -109,10 +110,10 @@ To work with the notebooks and code on your local computer:
    quarto preview
    ```
 
-## Other Curricula
+## 🎓 Other Curricula
 
 - [Introduction to AI with Python](https://wlos.github.io/ai_with_python_course/) ([GitHub Repository](https://github.com/wlos/ai_with_python_course)) — A companion course designed for learners beginning their programming journey, covering foundational Python programming, algebra, data structures, robot control, and introductory machine learning workflows.
 
-## License
+## 📄 License
 
 This course and its materials are licensed under the [MIT License](LICENSE).
