@@ -208,6 +208,21 @@ main.content table td,
   line-height: 1.55;
 }
 
+.info-card p + p {
+  margin-top: 0.35rem;
+}
+
+.info-card .focus-badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--course-blue);
+  background: rgba(36, 87, 214, 0.08);
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  letter-spacing: 0.01em;
+}
+
 /* Feature Grid */
 .feature-grid {
   display: grid;
