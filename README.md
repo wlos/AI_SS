@@ -1,24 +1,50 @@
 # Artificial Intelligence Skill Set
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![GitHub Contributors](https://img.shields.io/github/contributors/wlos/AI_SS?color=brightgreen)](https://github.com/wlos/AI_SS/graphs/contributors)
+[![GitHub Issues](https://img.shields.io/github/issues/wlos/AI_SS?color=brightgreen)](https://github.com/wlos/AI_SS/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/wlos/AI_SS?color=yellow)](https://github.com/wlos/AI_SS/pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/wlos/AI_SS/pulls)
+
+[![GitHub Watchers](https://img.shields.io/github/watchers/wlos/AI_SS?style=social)](https://github.com/wlos/AI_SS/watchers)
+[![GitHub Forks](https://img.shields.io/github/forks/wlos/AI_SS?style=social)](https://github.com/wlos/AI_SS/network/members)
+[![GitHub Stars](https://img.shields.io/github/stars/wlos/AI_SS?style=social)](https://github.com/wlos/AI_SS/stargazers)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/wlos/AI_SS/main)
+
 ![Artificial Intelligence Skill Set Roadmap](images/ai-skill-set-banner.png)
 
 Welcome to the **Artificial Intelligence Skill Set** curriculum. This course provides vocational learners and practitioners with practical foundations in artificial intelligence and hands-on machine learning. Through guided lecture notebooks, interactive visualisations, and hands-on laboratory exercises, students explore end-to-end data preparation, classical machine learning algorithms, deep learning fundamentals, computer vision with convolutional neural networks, and fine-tuning modern Transformer models.
 
-The interactive course website is available at:
+- 🌐 **Course Website**: <https://wlos.github.io/AI_SS/>
+- 🗺️ **Interactive Roadmap**: [Mindmap of the Course](http://soshnikov.com/courses/ai-for-beginners/mindmap.html)
 
-<https://wlos.github.io/AI_SS/>
+## What You'll Build
 
-## What you will learn
+### 🎯 Core Competencies
 
-Upon completing this course, you will be able to:
+- **Data & Feature Engineering**: Prepare structured tabular, text, and image datasets, handling missing values, encoding, and bias mitigation.
+- **Applied Machine Learning**: Build, evaluate, and tune regression, classification, and unsupervised clustering pipelines with scikit-learn.
+- **Deep Learning & Computer Vision**: Construct custom CNN architectures, train PyTorch vision classifiers, and apply transfer learning with pretrained ResNet models.
+- **Modern NLP & Transformers**: Master tokenisation, embeddings, and self-attention, fine-tuning DistilBERT and GPT-2 models with Hugging Face.
+- **Responsible AI & Opportunity Framing**: Frame real-world AI use cases balancing capability, ethical governance, safety, and continuous monitoring.
 
-- Distinguish the roles and relationships of artificial intelligence, machine learning, neural networks, and deep learning.
-- Prepare structured tabular records, text files, databases, and image datasets, managing feature encoding, target definitions, and data bias.
-- Train, interpret, and compare supervised regression, classification, and unsupervised clustering workflows using scikit-learn.
-- Apply systematic evaluation metrics, cross-validation, and diagnostic techniques to assess model performance and prevent overfitting.
-- Implement convolutional neural networks (CNNs) in PyTorch to extract features and classify image data.
-- Explore sequence modelling, self-attention, and Transformer architectures, fine-tuning pretrained language models (DistilBERT and GPT-2) with Hugging Face.
-- Frame practical AI opportunities systematically while addressing responsible use, data governance, and operational monitoring.
+### 🏗️ Practical Projects
+
+- **California Housing Valuation Engine**: Multi-feature regression model with feature scaling, cross-validation, and error diagnostics.
+- **MNIST Digit Classifier**: Multi-class visual classification comparing classical algorithms against PyTorch convolutional neural networks.
+- **Gatys Neural Style Transfer**: Artistic image synthesis blending content and style representations using convolutional feature maps.
+- **ResNet-18 Transfer Learning Classifier**: End-to-end PyTorch image dataset loader, augmentations, and transfer-learning fine-tuning.
+- **Support Ticket Transformer Classifier**: Fine-tuned DistilBERT transformer predicting IT support query categories with Hugging Face.
+
+### 🏢 Industry Applications
+
+Manufacturing & Predictive Maintenance · Healthcare Diagnostics · FinTech & Fraud Detection · E-Commerce Recommendations · IT Service Desk Automation
+
+## Career Impact
+
+- **Technical Roles**: Machine Learning Engineer · Applied AI Developer · Computer Vision Engineer · Data Scientist · AI Solutions Specialist
+- **Industry Sectors**: Technology & Cloud Services · Banking & FinTech · Healthcare Technology · E-Commerce & Retail · Public Sector & Education
+- **Portfolio Projects**: Production scikit-learn pipelines · Custom PyTorch vision models · Pretrained ResNet transfer learning · Fine-tuned Hugging Face transformer classifiers
 
 ## Content
 
@@ -86,3 +112,7 @@ To work with the notebooks and code on your local computer:
 ## Other Curricula
 
 - [Introduction to AI with Python](https://wlos.github.io/ai_with_python_course/) ([GitHub Repository](https://github.com/wlos/ai_with_python_course)) — A companion course designed for learners beginning their programming journey, covering foundational Python programming, algebra, data structures, robot control, and introductory machine learning workflows.
+
+## License
+
+This course and its materials are licensed under the [MIT License](LICENSE).
