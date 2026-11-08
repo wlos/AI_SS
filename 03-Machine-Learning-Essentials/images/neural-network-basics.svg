@@ -1,0 +1,58 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">How a simple artificial neuron works</title>
+  <desc id="desc">Inputs x1, x2, x3 are multiplied by weights, added with a bias, passed through an activation function and produce an output.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7fbff"/>
+      <stop offset="100%" stop-color="#fff8f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <text x="80" y="85" font-family="Helvetica, Arial, sans-serif" font-size="36" font-weight="700" fill="#1d3557">Fundamentals of an Artificial Neuron</text>
+  <text x="80" y="122" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#4a6075">A perceptron or neuron turns several inputs into one output by learning weights and a bias.</text>
+
+  <circle cx="180" cy="240" r="36" fill="#dceeff" stroke="#457b9d" stroke-width="3"/>
+  <circle cx="180" cy="360" r="36" fill="#dceeff" stroke="#457b9d" stroke-width="3"/>
+  <circle cx="180" cy="480" r="36" fill="#dceeff" stroke="#457b9d" stroke-width="3"/>
+  <text x="168" y="248" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1d3557">x1</text>
+  <text x="168" y="368" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1d3557">x2</text>
+  <text x="168" y="488" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#1d3557">x3</text>
+
+  <line x1="216" y1="240" x2="410" y2="285" stroke="#457b9d" stroke-width="4"/>
+  <line x1="216" y1="360" x2="410" y2="360" stroke="#457b9d" stroke-width="4"/>
+  <line x1="216" y1="480" x2="410" y2="435" stroke="#457b9d" stroke-width="4"/>
+  <text x="292" y="247" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#4a6075">weight w1</text>
+  <text x="292" y="350" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#4a6075">weight w2</text>
+  <text x="292" y="466" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#4a6075">weight w3</text>
+
+  <ellipse cx="470" cy="360" rx="110" ry="145" fill="#ffe2cf" stroke="#d17a3f" stroke-width="4"/>
+  <text x="432" y="340" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#8a4f26">Sum</text>
+  <text x="394" y="380" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#8a4f26">z = w.x + b</text>
+  <text x="395" y="420" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#9b6b48">weighted input</text>
+
+  <circle cx="470" cy="175" r="28" fill="#fff1a8" stroke="#be9b10" stroke-width="3"/>
+  <line x1="470" y1="203" x2="470" y2="250" stroke="#be9b10" stroke-width="4"/>
+  <text x="456" y="183" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#6b5808">b</text>
+  <text x="430" y="155" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#7f6b1d">bias</text>
+
+  <line x1="580" y1="360" x2="710" y2="360" stroke="#d17a3f" stroke-width="5"/>
+  <polygon points="710,360 684,344 684,376" fill="#d17a3f"/>
+
+  <rect x="720" y="270" width="210" height="180" rx="24" ry="24" fill="#dff3df" stroke="#4f8a5b" stroke-width="4"/>
+  <text x="770" y="326" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#285133">Activation</text>
+  <text x="775" y="366" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#285133">a = g(z)</text>
+  <text x="757" y="403" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#46704e">adds non-linearity</text>
+
+  <line x1="930" y1="360" x2="1045" y2="360" stroke="#4f8a5b" stroke-width="5"/>
+  <polygon points="1045,360 1019,344 1019,376" fill="#4f8a5b"/>
+
+  <circle cx="1090" cy="360" r="52" fill="#e5ddff" stroke="#7251a2" stroke-width="4"/>
+  <text x="1074" y="370" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#4b3472">y</text>
+  <text x="1050" y="435" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#5a4c76">prediction</text>
+
+  <rect x="80" y="570" width="1040" height="96" rx="18" ry="18" fill="#ffffff" opacity="0.92" stroke="#c9d7e0" stroke-width="2"/>
+  <text x="110" y="608" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#34495e">Three core ideas:</text>
+  <text x="280" y="608" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#34495e">weights decide which inputs matter most,</text>
+  <text x="676" y="608" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#34495e">the bias shifts the decision boundary,</text>
+  <text x="110" y="640" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#34495e">and the activation function lets the model learn more than a straight line.</text>
+</svg>

@@ -3,34 +3,38 @@ project:
   output-dir: _site
   render:
     - index.qmd
-    - Session_1_Introduction_to_AI.qmd
-    - "Session 2 Data for Machine Learning.ipynb"
-    - "Session3 Essentials of ML and DL Technologies.ipynb"
-    - "Session4 Machine Learning Case Studies.ipynb"
-    - "Session5-6 AI Opportunities.ipynb"
-    - "Session8 Machine Learning Evaluation.ipynb"
-    - "Session9-10 Introduction to Deep Learning.ipynb"
-    - "Session11 Deep Learning for Image Processing with CNNs.ipynb"
-    - "Session12 Building and Training CNN Models with PyTorch.ipynb"
-    - "Session12.1 CNN Feature Blocks and Training Data Preparation.ipynb"
-    - "Session13 Image Classification and Computer Vision Applications.ipynb"
-    - "Session14-15 Sequence Models and Transformer Applications.ipynb"
-    - "Session13.1 Loading Images with Datasets and Transforms.ipynb"
-    - "Session13.2 Preparing Image Batches for a CNN Model.ipynb"
-    - assets/style-transfer/gatys-style-transfer.ipynb
+    - 01-Introduction-to-AI/Session_1_Introduction_to_AI.qmd
+    - "02-Data-for-Machine-Learning/Session 2 Data for Machine Learning.ipynb"
+    - "03-Machine-Learning-Essentials/Session3 Essentials of ML and DL Technologies.ipynb"
+    - "04-Machine-Learning-Case-Studies/Session4 Machine Learning Case Studies.ipynb"
+    - "05-06-AI-Opportunities/Session5-6 AI Opportunities.ipynb"
+    - "08-Machine-Learning-Evaluation/Session8 Machine Learning Evaluation.ipynb"
+    - "09-10-Deep-Learning/Session9-10 Introduction to Deep Learning.ipynb"
+    - "11-CNN-Image-Processing/Session11 Deep Learning for Image Processing with CNNs.ipynb"
+    - "11-CNN-Image-Processing/gatys-style-transfer.ipynb"
+    - "12-Building-and-Training-CNNs/Session12 Building and Training CNN Models with PyTorch.ipynb"
+    - "12-Building-and-Training-CNNs/Session12.1 CNN Feature Blocks and Training Data Preparation.ipynb"
+    - "13-Computer-Vision/Session13 Image Classification and Computer Vision Applications.ipynb"
+    - "13-Computer-Vision/Session13.1 Loading Images with Datasets and Transforms.ipynb"
+    - "13-Computer-Vision/Session13.2 Preparing Image Batches for a CNN Model.ipynb"
+    - "14-15-Sequence-Models-and-Transformers/Session14-15 Sequence Models and Transformer Applications.ipynb"
   resources:
-    - "practice/session14-15/Session14-15 Support Ticket Classification Practice.ipynb"
-    - "Session13.3 ResNet18 Cat and Dog Classification.ipynb"
-    - "Session13.2 Image Batches Practice.ipynb"
-    - "Session13.1 Load Digit Images Practice.ipynb"
-    - assets/digit_images.zip
-    - assets/models/digit_cnn.pt
-    - "Session12.1 CNN Practice.ipynb"
-    - sample_data/mnist_train_small.csv
-    - sample_data/support_tickets.csv
-    - assets/style-transfer/gatys-style-transfer.ipynb
-    - assets/style-transfer/inputs/content.jpg
-    - assets/style-transfer/inputs/style-udnie.jpg
+    - "14-15-Sequence-Models-and-Transformers/practice/Session14-15 Support Ticket Classification Practice.ipynb"
+    - "13-Computer-Vision/practice/Session13.3 ResNet18 Cat and Dog Classification.ipynb"
+    - "13-Computer-Vision/practice/Session13.2 Image Batches Practice.ipynb"
+    - "13-Computer-Vision/practice/Session13.1 Load Digit Images Practice.ipynb"
+    - "12-Building-and-Training-CNNs/practice/Session12.1 CNN Practice.ipynb"
+    - 11-CNN-Image-Processing/gatys-style-transfer.ipynb
+    - 11-CNN-Image-Processing/sample_data/content.jpg
+    - 11-CNN-Image-Processing/sample_data/style-udnie.jpg
+    - 11-CNN-Image-Processing/sample_data/mnist_train_small.csv
+    - 12-Building-and-Training-CNNs/sample_data/digit_images.zip
+    - 12-Building-and-Training-CNNs/sample_data/digit_cnn.pt
+    - 12-Building-and-Training-CNNs/sample_data/mnist_train_small.csv
+    - 13-Computer-Vision/sample_data/digit_images.zip
+    - 14-15-Sequence-Models-and-Transformers/sample_data/support_tickets.csv
+    - 04-Machine-Learning-Case-Studies/sample_data/mnist_train_small.csv
+    - images/ai-skill-set-banner.png
 
 website:
   title: "Artificial Intelligence Skill Set"
@@ -44,27 +48,27 @@ website:
       - text: "Home"
         href: index.qmd
       - text: "Session 1"
-        href: Session_1_Introduction_to_AI.qmd
+        href: 01-Introduction-to-AI/Session_1_Introduction_to_AI.qmd
       - text: "Session 2"
-        href: "Session 2 Data for Machine Learning.ipynb"
+        href: "02-Data-for-Machine-Learning/Session 2 Data for Machine Learning.ipynb"
       - text: "Session 3"
-        href: "Session3 Essentials of ML and DL Technologies.ipynb"
+        href: "03-Machine-Learning-Essentials/Session3 Essentials of ML and DL Technologies.ipynb"
       - text: "Session 4"
-        href: "Session4 Machine Learning Case Studies.ipynb"
+        href: "04-Machine-Learning-Case-Studies/Session4 Machine Learning Case Studies.ipynb"
       - text: "Sessions 5–6"
-        href: "Session5-6 AI Opportunities.ipynb"
+        href: "05-06-AI-Opportunities/Session5-6 AI Opportunities.ipynb"
       - text: "Session 8"
-        href: "Session8 Machine Learning Evaluation.ipynb"
+        href: "08-Machine-Learning-Evaluation/Session8 Machine Learning Evaluation.ipynb"
       - text: "Sessions 9–10"
-        href: "Session9-10 Introduction to Deep Learning.ipynb"
+        href: "09-10-Deep-Learning/Session9-10 Introduction to Deep Learning.ipynb"
       - text: "Session 11"
-        href: "Session11 Deep Learning for Image Processing with CNNs.ipynb"
+        href: "11-CNN-Image-Processing/Session11 Deep Learning for Image Processing with CNNs.ipynb"
       - text: "Session 12"
-        href: "Session12 Building and Training CNN Models with PyTorch.ipynb"
+        href: "12-Building-and-Training-CNNs/Session12 Building and Training CNN Models with PyTorch.ipynb"
       - text: "Session 13"
-        href: "Session13 Image Classification and Computer Vision Applications.ipynb"
+        href: "13-Computer-Vision/Session13 Image Classification and Computer Vision Applications.ipynb"
       - text: "Sessions 14–15"
-        href: "Session14-15 Sequence Models and Transformer Applications.ipynb"
+        href: "14-15-Sequence-Models-and-Transformers/Session14-15 Sequence Models and Transformer Applications.ipynb"
   sidebar:
     style: floating
     search: true
@@ -72,18 +76,18 @@ website:
       - index.qmd
       - section: "Course Sessions"
         contents:
-          - Session_1_Introduction_to_AI.qmd
-          - "Session 2 Data for Machine Learning.ipynb"
-          - "Session3 Essentials of ML and DL Technologies.ipynb"
-          - "Session4 Machine Learning Case Studies.ipynb"
-          - "Session5-6 AI Opportunities.ipynb"
-          - "Session8 Machine Learning Evaluation.ipynb"
-          - "Session9-10 Introduction to Deep Learning.ipynb"
-          - "Session11 Deep Learning for Image Processing with CNNs.ipynb"
-          - "Session12 Building and Training CNN Models with PyTorch.ipynb"
+          - 01-Introduction-to-AI/Session_1_Introduction_to_AI.qmd
+          - "02-Data-for-Machine-Learning/Session 2 Data for Machine Learning.ipynb"
+          - "03-Machine-Learning-Essentials/Session3 Essentials of ML and DL Technologies.ipynb"
+          - "04-Machine-Learning-Case-Studies/Session4 Machine Learning Case Studies.ipynb"
+          - "05-06-AI-Opportunities/Session5-6 AI Opportunities.ipynb"
+          - "08-Machine-Learning-Evaluation/Session8 Machine Learning Evaluation.ipynb"
+          - "09-10-Deep-Learning/Session9-10 Introduction to Deep Learning.ipynb"
+          - "11-CNN-Image-Processing/Session11 Deep Learning for Image Processing with CNNs.ipynb"
+          - "12-Building-and-Training-CNNs/Session12 Building and Training CNN Models with PyTorch.ipynb"
           - text: "Session 13: Image Classification and Computer Vision Applications"
-            href: "Session13 Image Classification and Computer Vision Applications.ipynb"
-          - "Session14-15 Sequence Models and Transformer Applications.ipynb"
+            href: "13-Computer-Vision/Session13 Image Classification and Computer Vision Applications.ipynb"
+          - "14-15-Sequence-Models-and-Transformers/Session14-15 Sequence Models and Transformer Applications.ipynb"
   page-footer:
     left: "Artificial Intelligence Skill Set course materials"
     right:
