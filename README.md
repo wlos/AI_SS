@@ -17,7 +17,7 @@
 Welcome to the **Artificial Intelligence Skill Set** curriculum. This course provides vocational learners and practitioners with practical foundations in artificial intelligence and hands-on machine learning. Through guided lecture notebooks, interactive visualisations, and hands-on laboratory exercises, students explore end-to-end data preparation, classical machine learning algorithms, deep learning fundamentals, computer vision with convolutional neural networks, and fine-tuning modern Transformer models.
 
 - 🌐 **Course Website**: <https://wlos.github.io/AI_SS/>
-- 🗺️ **Interactive Roadmap**: [Mindmap of the Course](mindmap.html) · [Online Mindmap](https://wlos.github.io/AI_SS/mindmap.html)
+- 🗺️ **Interactive Roadmap**: [Mindmap of the Course](https://wlos.github.io/AI_SS/mindmap.html)
 
 ## 🛠️ What You'll Build
 
@@ -112,7 +112,9 @@ To work with the notebooks and code on your local computer:
 
 ## 🎓 Other Curricula
 
-- [Introduction to AI with Python](https://wlos.github.io/ai_with_python_course/) ([GitHub Repository](https://github.com/wlos/ai_with_python_course)) — A companion course designed for learners beginning their programming journey, covering foundational Python programming, algebra, data structures, robot control, and introductory machine learning workflows.
+- 🔌 [Build AI Apps with REST API & MCP](https://wlos.github.io/Connect-AI-using-REST-API/) · [GitHub](https://github.com/wlos/Connect-AI-using-REST-API): REST APIs, FastAPI microservices, and Model Context Protocol (MCP).
+- 🧠 [Introduction to AI with Python](https://wlos.github.io/ai_with_python_course/) · [GitHub](https://github.com/wlos/ai_with_python_course): Programming fundamentals, algorithms, robotics with micro:bit & Maqueen, and basic AI.
+- 📊 [Data Analysis with Python](https://wlos.github.io/DA_with_Python/) · [GitHub](https://github.com/wlos/DA_with_Python): Full data analysis pipeline, Pandas, Matplotlib / Seaborn visualisations, and statistical testing.
 
 ## 📄 License
 

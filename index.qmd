@@ -195,7 +195,17 @@ Clone the repository and set up a Python 3.10+ virtual environment with `torch`,
 
 ::: {.info-stack}
 ::: {.info-card}
-#### 🐍 [Introduction to AI with Python](https://wlos.github.io/ai_with_python_course/) · [GitHub Repository](https://github.com/wlos/ai_with_python_course)
+#### 🔌 [Build AI Apps with REST API & MCP](https://wlos.github.io/Connect-AI-using-REST-API/) · [GitHub Repository](https://github.com/wlos/Connect-AI-using-REST-API)
+Connect artificial intelligence models with enterprise backends and data systems using RESTful web services, FastAPI microservices, and the Model Context Protocol (MCP).
+:::
+
+::: {.info-card}
+#### 🧠 [Introduction to AI with Python](https://wlos.github.io/ai_with_python_course/) · [GitHub Repository](https://github.com/wlos/ai_with_python_course)
 Designed for learners starting their programming journey, covering foundational Python, algebra, data structures, robot control, and introductory machine learning workflows.
+:::
+
+::: {.info-card}
+#### 📊 [Data Analysis with Python](https://wlos.github.io/DA_with_Python/) · [GitHub Repository](https://github.com/wlos/DA_with_Python)
+An end-to-end data analytics curriculum covering multi-source data ingestion, Pandas wrangling, statistical hypothesis testing, and scikit-learn machine learning.
 :::
 :::
