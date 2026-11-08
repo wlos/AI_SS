@@ -36,6 +36,7 @@ project:
     - 14-15-Sequence-Models-and-Transformers/sample_data/support_tickets.csv
     - 04-Machine-Learning-Case-Studies/sample_data/mnist_train_small.csv
     - images/ai-skill-set-banner.png
+    - images/ai-skill-set-roadmap.png
 
 website:
   title: "Artificial Intelligence Skill Set"

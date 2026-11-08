@@ -49,6 +49,8 @@ Manufacturing & Predictive Maintenance · Healthcare Diagnostics · FinTech & Fr
 
 ## 📚 Content
 
+![Artificial Intelligence Skill Set Roadmap](images/ai-skill-set-roadmap.png)
+
 The course is organised into modular sessions located directly under the repository root. Supplementary lectures are grouped within their respective session folders, and practice notebook entries are integrated directly into each companion lecture.
 
 | Module | Topic | Focus Area | Key Content |

@@ -14,6 +14,10 @@ Welcome to the **Artificial Intelligence Skill Set** curriculum. A practical, co
 
 ## 🧭 Course Navigation {#course-navigation}
 
+::: {.course-banner-container}
+![](images/ai-skill-set-roadmap.png){.course-banner-img fig-alt="Artificial Intelligence Skill Set Curriculum Roadmap"}
+:::
+
 The course is organised into modular sessions located directly under the repository root. Supplementary lectures are grouped within their respective session folders, and practice notebook entries are integrated directly into each companion lecture.
 
 ::: {.info-stack}
