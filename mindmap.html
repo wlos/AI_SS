@@ -133,7 +133,6 @@ html, body {
 <script>
 window.markmap = window.markmap || {};
 let markmapInstance = null;
-let markmapRoot = null;
 
 let _markmap = undefined;
 Object.defineProperty(window.markmap, 'Markmap', {
@@ -146,12 +145,7 @@ Object.defineProperty(window.markmap, 'Markmap', {
     _markmap.create = function(svg, opts, data) {
       const mm = origCreate.call(originalClass, svg, opts, data);
       markmapInstance = mm;
-      if (data) markmapRoot = data;
-      const origSetData = mm.setData.bind(mm);
-      mm.setData = function(d, o) {
-        markmapRoot = d;
-        return origSetData(d, o);
-      };
+      window.mm = mm;
       return mm;
     };
   }
@@ -164,31 +158,31 @@ Object.defineProperty(window.markmap, 'Markmap', {
   <a href="index.html" class="nav-btn">← Back to Course</a>
 
   <div class="toolbar-group">
-    <button id="btn-zoom-in" class="tool-btn" title="Zoom In (放大)">
+    <button id="btn-zoom-in" class="tool-btn" title="Zoom in">
       <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-      <span>放大</span>
+      <span>Zoom In</span>
     </button>
-    <button id="btn-zoom-out" class="tool-btn" title="Zoom Out (缩小)">
+    <button id="btn-zoom-out" class="tool-btn" title="Zoom out">
       <svg viewBox="0 0 24 24"><path d="M19 13H5v-2h14v2z"/></svg>
-      <span>缩小</span>
+      <span>Zoom Out</span>
     </button>
     <div class="tool-divider"></div>
-    <button id="btn-fit" class="tool-btn" title="Fit to Screen (居中适应)">
+    <button id="btn-fit" class="tool-btn" title="Fit to screen (Recentre view)">
       <svg viewBox="0 0 24 24"><path d="M5 5h5V3H3v7h2V5zm14-2h-7v2h5v5h2V3zm-2 16h-5v2h7v-7h-2v5zM5 14H3v7h7v-2H5v-5z"/></svg>
-      <span>适应屏幕</span>
+      <span>Fit to Screen</span>
     </button>
     <div class="tool-divider"></div>
-    <button id="btn-expand" class="tool-btn" title="Expand All (显示全部 / 展开全部)">
+    <button id="btn-expand" class="tool-btn" title="Expand all branches">
       <svg viewBox="0 0 24 24"><path d="M12 5.83L15.17 9l1.41-1.41L12 3 7.41 7.59 8.83 9 12 5.83zm0 12.34L8.83 15l-1.41 1.41L12 21l4.59-4.59L15.17 15 12 18.17z"/></svg>
-      <span>显示全部</span>
+      <span>Expand All</span>
     </button>
-    <button id="btn-collapse" class="tool-btn" title="Collapse Branches (折叠分支)">
+    <button id="btn-collapse" class="tool-btn" title="Collapse detailed branches">
       <svg viewBox="0 0 24 24"><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"/></svg>
-      <span>折叠分支</span>
+      <span>Collapse All</span>
     </button>
   </div>
 
-  <span class="nav-title">🗺️ 点击链接直达对应章节 · 支持滚轮缩放与鼠标拖拽</span>
+  <span class="nav-title">🗺️ Click links to open lecture sections in new tab · Pan & Zoom supported</span>
 </div>
 
 <div class="markmap">
@@ -196,254 +190,277 @@ Object.defineProperty(window.markmap, 'Markmap', {
 # [Artificial Intelligence Skill Set](index.html)
 
 ## [01 Introduction to AI](01-Introduction-to-AI/Session_1_Introduction_to_AI.html)
-- [1. Overview: AI, ML, & DL](01-Introduction-to-AI/Session_1_Introduction_to_AI.html#1-overview-ai-ml-and-dl)
+- [1. Overview: AI, ML, & DL](01-Introduction-to-AI/Session_1_Introduction_to_AI.html#overview-ai-ml-and-dl)
   - Broad goal of simulating intelligence
   - Data-driven learning vs rule-based systems
   - Neural networks & hierarchical representations
-- [2. History & Schools of AI](01-Introduction-to-AI/Session_1_Introduction_to_AI.html#2-a-short-history-of-ai)
+- [2. History & Schools of AI](01-Introduction-to-AI/Session_1_Introduction_to_AI.html#a-short-history-of-ai)
   - Symbolism (Logic, Expert Systems)
   - Behaviourism (Perception & Feedback)
   - Connectionism (Artificial Neural Units)
-- [3. Fundamentals of Machine Learning](01-Introduction-to-AI/Session_1_Introduction_to_AI.html#3-fundamentals-of-machine-learning)
+- [3. Fundamentals of Machine Learning](01-Introduction-to-AI/Session_1_Introduction_to_AI.html#fundamentals-of-machine-learning)
   - Supervised Learning (Labels, Decision Boundaries)
   - Unsupervised Learning (Clustering, Patterns)
   - Features, Loss, & Generalisation
-- [4. Fundamentals of Neural Networks](01-Introduction-to-AI/Session_1_Introduction_to_AI.html#4-fundamentals-of-neural-networks)
+- [4. Fundamentals of Neural Networks](01-Introduction-to-AI/Session_1_Introduction_to_AI.html#fundamentals-of-neural-networks)
   - Inputs (x), Weights (w), & Bias (b)
   - Weighted Sum: z = Σ wᵢxᵢ + b
   - Activation Functions: ReLU, Sigmoid, Tanh
   - Forward Propagation (Predictions)
   - Backward Propagation (Gradients & Loss Reduction)
-- [5. Fundamentals of Deep Learning](01-Introduction-to-AI/Session_1_Introduction_to_AI.html#5-fundamentals-of-deep-learning)
+- [5. Fundamentals of Deep Learning](01-Introduction-to-AI/Session_1_Introduction_to_AI.html#fundamentals-of-deep-learning)
   - Deep layered representations
   - Training hardware & modern models
 
 ## [02 Data for Machine Learning](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html)
-- [1. Data for Machine Learning](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html#1-data-for-machine-learning)
+- [1. Data for Machine Learning](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html#data-for-machine-learning)
   - Observations, Samples & Instances
   - Structured Data (Rows & Columns)
-- [2. Common Data Categories](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html#2-common-data-categories)
+- [2. Common Data Categories](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html#common-data-categories)
   - Structured, Semi-structured & Unstructured Data
   - Labelled vs Unlabelled Datasets
-- [3. Loading Data](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html#3-loading-data)
+- [3. Loading Data](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html#loading-data)
   - Loading CSV & Excel Files
   - Connecting & Querying SQLite Databases
   - Extracting Unstructured Text Data
-- [4. Attributes in Machine Learning](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html#4-attributes-in-machine-learning)
+- [4. Attributes in Machine Learning](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html#attributes-in-machine-learning)
   - Data Attributes (Continuous vs Discrete)
   - Target Attributes & Unique Identifiers
   - Model Attributes Learned During Training
-- [5. Data Bias & Fairness](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html#5-data-bias)
+- [5. Data Bias & Fairness](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html#data-bias)
   - Historical Bias & Representation Bias
   - Auditing Subgroups & pandas Fairness Checks
-- [6. Data Preprocessing Techniques](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html#6-data-preprocessing-techniques)
+- [6. Data Preprocessing Techniques](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html#data-preprocessing-techniques)
   - Handling Missing Values & Imputation
   - Feature Standardisation & Min-Max Scaling
   - Categorical Encoding (One-Hot & Ordinal)
-- [7. Splitting into Train & Test Sets](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html#7-split-into-training-and-test-sets)
+- [7. Splitting into Train & Test Sets](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html#split-into-training-and-test-sets)
   - Train/Test Partitions & Random Seeds
   - Stratified Sampling for Class Balance
-- [8. Key Data Wrangling in pandas](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html#8-key-data-wrangling-functions-in-pandas)
-  - Filtering, Grouping & Aggregation
-  - Reshaping & Merging DataFrames
+- [8. Key Data Wrangling in pandas](02-Data-for-Machine-Learning/Session%202%20Data%20for%20Machine%20Learning.html#key-data-wrangling-functions-in-pandas)
+  - Selecting, Filtering & Sorting
+  - Transforming, Summarising & Reshaping
 
 ## [03 Machine Learning Essentials](03-Machine-Learning-Essentials/Session3%20Essentials%20of%20ML%20and%20DL%20Technologies.html)
-- [1. AI Applications by Data Modality](03-Machine-Learning-Essentials/Session3%20Essentials%20of%20ML%20and%20DL%20Technologies.html#1-ai-applications-by-data-modality)
+- [1. AI Applications by Data Modality](03-Machine-Learning-Essentials/Session3%20Essentials%20of%20ML%20and%20DL%20Technologies.html#ai-applications-by-data-modality)
   - Tabular, Vision, Audio & Language Modalities
-- [2. Regression vs Classification vs Clustering](03-Machine-Learning-Essentials/Session3%20Essentials%20of%20ML%20and%20DL%20Technologies.html#2-regression-vs-classification-vs-clustering)
+- [2. Regression vs Classification vs Clustering](03-Machine-Learning-Essentials/Session3%20Essentials%20of%20ML%20and%20DL%20Technologies.html#regression-vs-classification-vs-clustering)
   - Continuous Target Prediction (Regression)
   - Discrete Category Assignment (Classification)
   - Unsupervised Pattern Discovery (Clustering)
-- [3. Common Machine Learning Methods](03-Machine-Learning-Essentials/Session3%20Essentials%20of%20ML%20and%20DL%20Technologies.html#3-common-machine-learning-methods)
+- [3. Common Machine Learning Methods](03-Machine-Learning-Essentials/Session3%20Essentials%20of%20ML%20and%20DL%20Technologies.html#common-machine-learning-methods)
   - Linear & Logistic Regression
   - K-Nearest Neighbours (KNN)
   - Decision Trees & Random Forests
   - Gradient Boosting
   - K-Means Clustering
-- [4. Machine Learning with scikit-learn](03-Machine-Learning-Essentials/Session3%20Essentials%20of%20ML%20and%20DL%20Technologies.html#4-machine-learning-with-scikit-learn)
+- [4. Machine Learning with scikit-learn](03-Machine-Learning-Essentials/Session3%20Essentials%20of%20ML%20and%20DL%20Technologies.html#machine-learning-with-scikit-learn)
   - Estimator API: fit, transform, predict
   - Building Robust scikit-learn Pipelines
-- [5. Linear Regression Case Study](03-Machine-Learning-Essentials/Session3%20Essentials%20of%20ML%20and%20DL%20Technologies.html#5-case-study-celsius-to-fahrenheit-linear-regression)
+- [5. Linear Regression Case Study](03-Machine-Learning-Essentials/Session3%20Essentials%20of%20ML%20and%20DL%20Technologies.html#case-study-celsius-to-fahrenheit-linear-regression)
   - Fitting Celsius to Fahrenheit Relationship
 
 ## [04 Machine Learning Case Studies](04-Machine-Learning-Case-Studies/Session4%20Machine%20Learning%20Case%20Studies.html)
-- [1. California Housing Regression](04-Machine-Learning-Case-Studies/Session4%20Machine%20Learning%20Case%20Studies.html#1-case-study-california-housing-regression)
+- [1. California Housing Regression](04-Machine-Learning-Case-Studies/Session4%20Machine%20Learning%20Case%20Studies.html#case-study-california-housing-regression)
   - Multi-feature House Value Prediction
   - Feature Scaling & Regression Diagnostics
-- [2. Diabetes Disease Progression](04-Machine-Learning-Case-Studies/Session4%20Machine%20Learning%20Case%20Studies.html#2-case-study-diabetes-regression)
+- [2. Diabetes Disease Progression](04-Machine-Learning-Case-Studies/Session4%20Machine%20Learning%20Case%20Studies.html#case-study-diabetes-regression)
   - Medical Feature Analysis & Quantitative Prediction
-- [3. Linnerud Multi-Output Regression](04-Machine-Learning-Case-Studies/Session4%20Machine%20Learning%20Case%20Studies.html#3-case-study-linnerud-exercise-and-physical-measurements-regression)
+- [3. Linnerud Multi-Output Regression](04-Machine-Learning-Case-Studies/Session4%20Machine%20Learning%20Case%20Studies.html#case-study-linnerud-exercise-and-physical-measurements-regression)
   - Predicting Multiple Physiological Indicators Simultaneously
-- [4. MNIST Handwritten Digit Classification](04-Machine-Learning-Case-Studies/Session4%20Machine%20Learning%20Case%20Studies.html#4-case-study-mnist-digit-classification)
+- [4. MNIST Handwritten Digit Classification](04-Machine-Learning-Case-Studies/Session4%20Machine%20Learning%20Case%20Studies.html#case-study-mnist-digit-classification)
   - Multiclass Image Classification Benchmark
   - Comparing Classifiers on 784 Pixel Dimensions
-- [5. Wine Chemical Clustering](04-Machine-Learning-Case-Studies/Session4%20Machine%20Learning%20Case%20Studies.html#5-case-study-wine-clustering)
+- [5. Wine Chemical Clustering](04-Machine-Learning-Case-Studies/Session4%20Machine%20Learning%20Case%20Studies.html#case-study-wine-clustering)
   - Unsupervised K-means Clustering & Silhouette Analysis
 
 ## [05–06 AI Opportunities](05-06-AI-Opportunities/Session5-6%20AI%20Opportunities.html)
-- [1. Four-step AI Opportunity Process](05-06-AI-Opportunities/Session5-6%20AI%20Opportunities.html#1-a-four-step-ai-opportunity-process)
+- [1. Four-step AI Opportunity Process](05-06-AI-Opportunities/Session5-6%20AI%20Opportunities.html#a-four-step-ai-opportunity-process)
   - Problem Definition, Data Assessment, Modelling & Evaluation
-- [2. Frame an AI Opportunity](05-06-AI-Opportunities/Session5-6%20AI%20Opportunities.html#2-frame-an-ai-opportunity)
+- [2. Frame an AI Opportunity](05-06-AI-Opportunities/Session5-6%20AI%20Opportunities.html#frame-an-ai-opportunity)
   - Mapping Business Value, Risk & Technical Feasibility
-- [3. AI for Product Recommendation](05-06-AI-Opportunities/Session5-6%20AI%20Opportunities.html#3-ai-for-product-recommendation)
+- [3. AI for Product Recommendation](05-06-AI-Opportunities/Session5-6%20AI%20Opportunities.html#ai-for-product-recommendation)
   - User-Item Matrices & Recommendation Workflows
-- [4. AI for Employee Attrition](05-06-AI-Opportunities/Session5-6%20AI%20Opportunities.html#4-ai-for-employee-attrition-analysis)
+- [4. AI for Employee Attrition](05-06-AI-Opportunities/Session5-6%20AI%20Opportunities.html#ai-for-employee-attrition-analysis)
   - Tabular Classification & Feature Importance
-- [5. AI for Support Ticket Classification](05-06-AI-Opportunities/Session5-6%20AI%20Opportunities.html#5-ai-for-multi-label-text-classification)
+- [5. AI for Support Ticket Classification](05-06-AI-Opportunities/Session5-6%20AI%20Opportunities.html#ai-for-multi-label-text-classification)
   - Multi-label IT Helpdesk Text Routing
-- [6. AI for Network Intrusion Detection](05-06-AI-Opportunities/Session5-6%20AI%20Opportunities.html#6-ai-for-network-intrusion-classification)
+- [6. AI for Network Intrusion Detection](05-06-AI-Opportunities/Session5-6%20AI%20Opportunities.html#ai-for-network-intrusion-classification)
   - Binary & Multiclass Cybersecurity Anomaly Detection
 
 ## [08 Machine Learning Evaluation](08-Machine-Learning-Evaluation/Session8%20Machine%20Learning%20Evaluation.html)
-- [1. Evaluation Foundations](08-Machine-Learning-Evaluation/Session8%20Machine%20Learning%20Evaluation.html#1-evaluation-foundations)
+- [1. Evaluation Foundations](08-Machine-Learning-Evaluation/Session8%20Machine%20Learning%20Evaluation.html#evaluation-foundations)
   - Train/Validation/Test Split Principles
-- [2. Classification Evaluation Metrics](08-Machine-Learning-Evaluation/Session8%20Machine%20Learning%20Evaluation.html#2-classification-evaluation-metrics)
+- [2. Classification Evaluation Metrics](08-Machine-Learning-Evaluation/Session8%20Machine%20Learning%20Evaluation.html#classification-evaluation-metrics)
   - Confusion Matrix (TP, TN, FP, FN)
   - Accuracy, Precision, Recall, & F1 Score
   - ROC Curves & Area Under the Curve (AUC)
-- [3. Regression Evaluation Metrics](08-Machine-Learning-Evaluation/Session8%20Machine%20Learning%20Evaluation.html#3-regression-evaluation-metrics)
+- [3. Regression Evaluation Metrics](08-Machine-Learning-Evaluation/Session8%20Machine%20Learning%20Evaluation.html#regression-evaluation-metrics)
   - Mean Absolute Error (MAE)
   - Mean Squared Error (MSE) & Root MSE (RMSE)
   - Coefficient of Determination (R²)
-- [4. Clustering Evaluation Metrics](08-Machine-Learning-Evaluation/Session8%20Machine%20Learning%20Evaluation.html#4-clustering-evaluation-metrics)
+- [4. Clustering Evaluation Metrics](08-Machine-Learning-Evaluation/Session8%20Machine%20Learning%20Evaluation.html#clustering-evaluation-metrics)
   - Silhouette Score & Cluster Separability
-- [5. Underfitting & Overfitting](08-Machine-Learning-Evaluation/Session8%20Machine%20Learning%20Evaluation.html#5-underfitting-and-overfitting)
+- [5. Underfitting & Overfitting](08-Machine-Learning-Evaluation/Session8%20Machine%20Learning%20Evaluation.html#underfitting-and-overfitting)
   - Bias-Variance Tradeoff & Regularisation
-- [6. K-Fold Cross-Validation](08-Machine-Learning-Evaluation/Session8%20Machine%20Learning%20Evaluation.html#6-k-fold-cross-validation)
+- [6. K-Fold Cross-Validation](08-Machine-Learning-Evaluation/Session8%20Machine%20Learning%20Evaluation.html#k-fold-cross-validation)
   - Cross-validation Splitters & Variance Estimation
 
 ## [09–10 Deep Learning Fundamentals](09-10-Deep-Learning/Session9-10%20Introduction%20to%20Deep%20Learning.html)
-- [1. AI & ML Foundations](09-10-Deep-Learning/Session9-10%20Introduction%20to%20Deep%20Learning.html#1-what-are-artificial-intelligence-and-machine-learning)
+- [1. AI & ML Foundations](09-10-Deep-Learning/Session9-10%20Introduction%20to%20Deep%20Learning.html#what-are-artificial-intelligence-and-machine-learning)
   - Rule-based AI vs Learned Statistical Models
-- [2. From ML to Deep Learning](09-10-Deep-Learning/Session9-10%20Introduction%20to%20Deep%20Learning.html#2-from-machine-learning-to-deep-learning)
+- [2. From ML to Deep Learning](09-10-Deep-Learning/Session9-10%20Introduction%20to%20Deep%20Learning.html#from-machine-learning-to-deep-learning)
   - Artificial Neurons & Multilayer Perceptrons (MLP)
   - Loss Functions: Cross-Entropy & MSE
   - Optimisers: Gradient Descent, SGD & Adam
-- [3. Representative Deep Architectures](09-10-Deep-Learning/Session9-10%20Introduction%20to%20Deep%20Learning.html#3-representative-deep-learning-architectures)
+- [3. Representative Deep Architectures](09-10-Deep-Learning/Session9-10%20Introduction%20to%20Deep%20Learning.html#representative-deep-learning-architectures)
   - Convolutional Neural Networks (CNNs)
   - Recurrent Neural Networks (RNNs)
   - Attention Mechanisms & Transformers
-- [4. Deep Learning Frameworks](09-10-Deep-Learning/Session9-10%20Introduction%20to%20Deep%20Learning.html#4-deep-learning-programming-frameworks)
+- [4. Deep Learning Frameworks](09-10-Deep-Learning/Session9-10%20Introduction%20to%20Deep%20Learning.html#deep-learning-programming-frameworks)
   - PyTorch Tensor Operations & Autograd
   - TensorFlow / Keras Ecosystem
 
 ## [11 CNN Image Processing](11-CNN-Image-Processing/Session11%20Deep%20Learning%20for%20Image%20Processing%20with%20CNNs.html)
-- [1. Key Scientists & History](11-CNN-Image-Processing/Session11%20Deep%20Learning%20for%20Image%20Processing%20with%20CNNs.html#1-key-scientists-and-contributors)
+- [1. Key Scientists & History](11-CNN-Image-Processing/Session11%20Deep%20Learning%20for%20Image%20Processing%20with%20CNNs.html#key-scientists-and-contributors)
   - Hubel & Wiesel, Fukushima, LeCun, ImageNet
-- [2. Why CNNs Over Plain MLPs?](11-CNN-Image-Processing/Session11%20Deep%20Learning%20for%20Image%20Processing%20with%20CNNs.html#2-why-cnns-instead-of-plain-mlps)
+- [2. Why CNNs Over Plain MLPs?](11-CNN-Image-Processing/Session11%20Deep%20Learning%20for%20Image%20Processing%20with%20CNNs.html#why-cnns-instead-of-plain-mlps)
   - Parameter Explosion & Loss of Spatial Structure
-- [3. CNN Building Blocks](11-CNN-Image-Processing/Session11%20Deep%20Learning%20for%20Image%20Processing%20with%20CNNs.html#3-cnn-building-blocks)
+- [3. CNN Building Blocks](11-CNN-Image-Processing/Session11%20Deep%20Learning%20for%20Image%20Processing%20with%20CNNs.html#cnn-building-blocks)
   - Kernel Filters & Feature Maps
   - Padding (Valid vs Same) & Strides
   - Pooling Layers (Max Pooling & Average Pooling)
-- [4. Popular CNN Architectures](11-CNN-Image-Processing/Session11%20Deep%20Learning%20for%20Image%20Processing%20with%20CNNs.html#4-popular-architectures)
+- [4. Popular CNN Architectures](11-CNN-Image-Processing/Session11%20Deep%20Learning%20for%20Image%20Processing%20with%20CNNs.html#popular-architectures)
   - LeNet-5, AlexNet, VGG, ResNet Residual Blocks
-- [5. Why Networks Became Deeper](11-CNN-Image-Processing/Session11%20Deep%20Learning%20for%20Image%20Processing%20with%20CNNs.html#5-why-did-networks-become-deeper-rather-than-only-wider)
+- [5. Why Networks Became Deeper](11-CNN-Image-Processing/Session11%20Deep%20Learning%20for%20Image%20Processing%20with%20CNNs.html#why-did-networks-become-deeper-rather-than-only-wider)
   - Vanishing Gradients & Skip Connections
-- [6. Image Classification with CNN](11-CNN-Image-Processing/Session11%20Deep%20Learning%20for%20Image%20Processing%20with%20CNNs.html#6-image-classification-with-cnn)
+- [6. Image Classification with CNN](11-CNN-Image-Processing/Session11%20Deep%20Learning%20for%20Image%20Processing%20with%20CNNs.html#image-classification-with-cnn)
   - Feature Extractor + Classifier Head Pipeline
-- [7. Gatys Neural Style Transfer](11-CNN-Image-Processing/gatys-style-transfer.html#3-content-loss-and-style-loss)
-  - Content Representation & Content Loss
-  - Style Representation via Gram Matrix
-  - Backpropagation into Pixel Tensor
+- [7. Image Style Transfer](11-CNN-Image-Processing/Session11%20Deep%20Learning%20for%20Image%20Processing%20with%20CNNs.html#image-style-transfer)
+  - Content & Style Representations
+- [8. Gatys Neural Style Transfer](11-CNN-Image-Processing/gatys-style-transfer.html#content-loss-and-style-loss)
+  - Gram Matrix Optimisation Tutorial
 
 ## [12 Building & Training CNNs](12-Building-and-Training-CNNs/Session12%20Building%20and%20Training%20CNN%20Models%20with%20PyTorch.html)
-- [1. CNN Feature Blocks with PyTorch](12-Building-and-Training-CNNs/Session12%20Building%20and%20Training%20CNN%20Models%20with%20PyTorch.html#1-building-a-cnn-feature-block-with-conv2d-and-maxpool2d)
+- [1. CNN Feature Blocks with PyTorch](12-Building-and-Training-CNNs/Session12%20Building%20and%20Training%20CNN%20Models%20with%20PyTorch.html#building-a-cnn-feature-block-with-conv2d-and-maxpool2d)
   - Conv2d & MaxPool2d Operations & Dimensions
-- [2. Build a Simple CNN with nn.Module](12-Building-and-Training-CNNs/Session12%20Building%20and%20Training%20CNN%20Models%20with%20PyTorch.html#2-build-a-simple-cnn-with-pytorch)
+- [2. Build a Simple CNN with nn.Module](12-Building-and-Training-CNNs/Session12%20Building%20and%20Training%20CNN%20Models%20with%20PyTorch.html#build-a-simple-cnn-with-pytorch)
   - Defining Layers in __init__ & Forward Pass
-- [3. Complete PyTorch Training Loop](12-Building-and-Training-CNNs/Session12%20Building%20and%20Training%20CNN%20Models%20with%20PyTorch.html#3-train-a-cnn-with-pytorch)
+- [3. Complete PyTorch Training Loop](12-Building-and-Training-CNNs/Session12%20Building%20and%20Training%20CNN%20Models%20with%20PyTorch.html#train-a-cnn-with-pytorch)
   - Zero Gradients, Forward, Loss, Backward, Optimizer Step
-- [4. Evaluate Model Performance](12-Building-and-Training-CNNs/Session12%20Building%20and%20Training%20CNN%20Models%20with%20PyTorch.html#4-evaluate-the-model)
+- [4. Evaluate Model Performance](12-Building-and-Training-CNNs/Session12%20Building%20and%20Training%20CNN%20Models%20with%20PyTorch.html#evaluate-the-model)
   - Validation Accuracy, Confusion Matrix & TorchScript Export
-- [5. Transfer Learning with Pretrained Models](12-Building-and-Training-CNNs/Session12%20Building%20and%20Training%20CNN%20Models%20with%20PyTorch.html#5-transfer-learning-with-a-pretrained-cnn)
+- [5. Transfer Learning with Pretrained Models](12-Building-and-Training-CNNs/Session12%20Building%20and%20Training%20CNN%20Models%20with%20PyTorch.html#transfer-learning-with-a-pretrained-cnn)
   - Freezing Backbone Weights & Training Custom Classifier Heads
 
 ## [13 Computer Vision Applications](13-Computer-Vision/Session13%20Image%20Classification%20and%20Computer%20Vision%20Applications.html)
-- [1. Datasets & Image Transforms](13-Computer-Vision/Session13%20Image%20Classification%20and%20Computer%20Vision%20Applications.html#1-loading-images-with-datasets-and-transforms)
+- [1. Datasets & Image Transforms](13-Computer-Vision/Session13%20Image%20Classification%20and%20Computer%20Vision%20Applications.html#loading-images-with-datasets-and-transforms)
   - torchvision ImageFolder, Resize, ToTensor, Normalise
-- [2. DataLoader Batching & Workers](13-Computer-Vision/Session13%20Image%20Classification%20and%20Computer%20Vision%20Applications.html#2-preparing-image-batches-for-a-cnn-model)
+- [2. DataLoader Batching & Workers](13-Computer-Vision/Session13%20Image%20Classification%20and%20Computer%20Vision%20Applications.html#preparing-image-batches-for-a-cnn-model)
   - Shuffling, Batch Sizes & Memory Pinning
-- [3. Image Classification Workflow](13-Computer-Vision/Session13%20Image%20Classification%20and%20Computer%20Vision%20Applications.html#3-image-classification-workflow)
+- [3. Image Classification Workflow](13-Computer-Vision/Session13%20Image%20Classification%20and%20Computer%20Vision%20Applications.html#image-classification-workflow)
   - End-to-end Pipeline from Raw Images to Predictions
-- [4. Transfer Learning: ResNet-18 Classifier](13-Computer-Vision/Session13%20Image%20Classification%20and%20Computer%20Vision%20Applications.html#4-case-study-dog-and-cat-classification-with-resnet18)
+- [4. Transfer Learning: ResNet-18 Classifier](13-Computer-Vision/Session13%20Image%20Classification%20and%20Computer%20Vision%20Applications.html#case-study-dog-and-cat-classification-with-resnet18)
   - Cat vs Dog Fine-tuning Benchmark
-- [5. Object Detection: YOLO & DETR](13-Computer-Vision/Session13%20Image%20Classification%20and%20Computer%20Vision%20Applications.html#5-object-detection-yolo-and-detr)
+- [5. Object Detection: YOLO & DETR](13-Computer-Vision/Session13%20Image%20Classification%20and%20Computer%20Vision%20Applications.html#object-detection-yolo-and-detr)
   - Bounding Boxes, Anchors & Transformer-based Detection
-- [6. Generative Models: GANs & Diffusion](13-Computer-Vision/Session13%20Image%20Classification%20and%20Computer%20Vision%20Applications.html#6-image-generation-gans-and-diffusion-models)
+- [6. Generative Models: GANs & Diffusion](13-Computer-Vision/Session13%20Image%20Classification%20and%20Computer%20Vision%20Applications.html#image-generation-gans-and-diffusion-models)
   - Generator-Discriminator Pairs & Denoising Diffusion
 
 ## [14–15 Sequence Models & Transformers](14-15-Sequence-Models-and-Transformers/Session14-15%20Sequence%20Models%20and%20Transformer%20Applications.html)
-- [1. From CNNs to Sequence Models](14-15-Sequence-Models-and-Transformers/Session14-15%20Sequence%20Models%20and%20Transformer%20Applications.html#1-from-cnns-to-sequence-models)
+- [1. From CNNs to Sequence Models](14-15-Sequence-Models-and-Transformers/Session14-15%20Sequence%20Models%20and%20Transformer%20Applications.html#from-cnns-to-sequence-models)
   - Handling Variable-Length Inputs & Temporal Dependencies
-- [2. Tokenization & Dense Embeddings](14-15-Sequence-Models-and-Transformers/Session14-15%20Sequence%20Models%20and%20Transformer%20Applications.html#2-tokenization-and-embedding)
+- [2. Tokenisation & Dense Embeddings](14-15-Sequence-Models-and-Transformers/Session14-15%20Sequence%20Models%20and%20Transformer%20Applications.html#tokenization-and-embedding)
   - WordPiece, BPE Tokenisers & Embedding Spaces
-- [3. Recurrent Architectures (RNN & LSTM)](14-15-Sequence-Models-and-Transformers/Session14-15%20Sequence%20Models%20and%20Transformer%20Applications.html#3-rnn-and-lstm-a-brief-introduction)
+- [3. Recurrent Architectures (RNN & LSTM)](14-15-Sequence-Models-and-Transformers/Session14-15%20Sequence%20Models%20and%20Transformer%20Applications.html#rnn-and-lstm-a-brief-introduction)
   - Hidden States, Vanishing Gradients & Gate Mechanisms
-- [4. Attention & Transformer Architecture](14-15-Sequence-Models-and-Transformers/Session14-15%20Sequence%20Models%20and%20Transformer%20Applications.html#4-attention-and-transformers)
+- [4. Attention & Transformer Architecture](14-15-Sequence-Models-and-Transformers/Session14-15%20Sequence%20Models%20and%20Transformer%20Applications.html#attention-and-transformers)
   - Scaled Dot-Product Attention: Query, Key, Value
   - Multi-Head Self-Attention & Positional Encodings
-- [5. Large Language Models (BERT, GPT, T5)](14-15-Sequence-Models-and-Transformers/Session14-15%20Sequence%20Models%20and%20Transformer%20Applications.html#5-large-language-models-for-natural-language-processing)
+- [5. Large Language Models (BERT, GPT, T5)](14-15-Sequence-Models-and-Transformers/Session14-15%20Sequence%20Models%20and%20Transformer%20Applications.html#large-language-models-for-natural-language-processing)
   - Encoder-Only vs Decoder-Only vs Encoder-Decoder
-- [6. Hugging Face Support Ticket Fine-tuning](14-15-Sequence-Models-and-Transformers/Session14-15%20Sequence%20Models%20and%20Transformer%20Applications.html#6-implementing-three-methods-for-support-ticket-classification)
+- [6. Hugging Face Support Ticket Fine-tuning](14-15-Sequence-Models-and-Transformers/Session14-15%20Sequence%20Models%20and%20Transformer%20Applications.html#implementing-three-methods-for-support-ticket-classification)
   - Fine-tuning DistilBERT on Helpdesk Classification
   - Evaluating Accuracy, F1 Score & Production Inference
 </script>
 </div>
 
 <script>
-// Open mindmap content links in a new tab to preserve mindmap state
+// Open mindmap content links in a new tab; resolve to online GitHub Pages if running from file://
 document.addEventListener('click', function(e) {
   const link = e.target.closest('a');
-  if (link && link.getAttribute('href') && !link.classList.contains('nav-btn')) {
-    link.setAttribute('target', '_blank');
-    link.setAttribute('rel', 'noopener noreferrer');
+  if (!link || !link.getAttribute('href') || link.classList.contains('nav-btn')) return;
+
+  let href = link.getAttribute('href');
+  
+  if (window.location.protocol === 'file:' && !href.startsWith('http://') && !href.startsWith('https://')) {
+    href = 'https://wlos.github.io/AI_SS/' + href.replace(/^\.\//, '');
+    link.setAttribute('href', href);
   }
+
+  link.setAttribute('target', '_blank');
+  link.setAttribute('rel', 'noopener noreferrer');
 });
 
-// Setup Toolbar button actions
-function expandNode(node) {
-  if (node.payload) node.payload.f = false;
-  if (node.p) node.p.f = false;
-  if (node.children) node.children.forEach(expandNode);
-}
-
-function collapseNode(node, isRoot = true) {
-  if (!isRoot) {
-    if (node.payload) node.payload.f = true;
-    if (node.p) node.p.f = true;
+// Recursive fold state manager for Markmap
+function setNodeFold(node, fold, depth) {
+  if (depth === undefined) depth = 0;
+  if (depth >= 1) {
+    node.payload = Object.assign({}, node.payload, { fold: fold ? 1 : 0 });
+  } else {
+    node.payload = Object.assign({}, node.payload, { fold: 0 });
   }
-  if (node.children) node.children.forEach(child => collapseNode(child, false));
+  if (node.children && node.children.length > 0) {
+    node.children.forEach(function(child) {
+      setNodeFold(child, fold, depth + 1);
+    });
+  }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('btn-zoom-in').addEventListener('click', function() {
-    if (markmapInstance) markmapInstance.rescale(1.25);
-  });
+  const btnZoomIn = document.getElementById('btn-zoom-in');
+  const btnZoomOut = document.getElementById('btn-zoom-out');
+  const btnFit = document.getElementById('btn-fit');
+  const btnExpand = document.getElementById('btn-expand');
+  const btnCollapse = document.getElementById('btn-collapse');
 
-  document.getElementById('btn-zoom-out').addEventListener('click', function() {
-    if (markmapInstance) markmapInstance.rescale(0.8);
-  });
+  if (btnZoomIn) {
+    btnZoomIn.addEventListener('click', function() {
+      if (markmapInstance) markmapInstance.rescale(1.25);
+    });
+  }
 
-  document.getElementById('btn-fit').addEventListener('click', function() {
-    if (markmapInstance) markmapInstance.fit();
-  });
+  if (btnZoomOut) {
+    btnZoomOut.addEventListener('click', function() {
+      if (markmapInstance) markmapInstance.rescale(0.8);
+    });
+  }
 
-  document.getElementById('btn-expand').addEventListener('click', function() {
-    if (markmapInstance && markmapRoot) {
-      expandNode(markmapRoot);
-      markmapInstance.setData(markmapRoot);
-      markmapInstance.fit();
-    }
-  });
+  if (btnFit) {
+    btnFit.addEventListener('click', function() {
+      if (markmapInstance) markmapInstance.fit();
+    });
+  }
 
-  document.getElementById('btn-collapse').addEventListener('click', function() {
-    if (markmapInstance && markmapRoot) {
-      collapseNode(markmapRoot, true);
-      markmapInstance.setData(markmapRoot);
-      markmapInstance.fit();
-    }
-  });
+  if (btnExpand) {
+    btnExpand.addEventListener('click', async function() {
+      if (markmapInstance && markmapInstance.state && markmapInstance.state.data) {
+        setNodeFold(markmapInstance.state.data, false, 0);
+        await markmapInstance.renderData();
+        markmapInstance.fit();
+      }
+    });
+  }
+
+  if (btnCollapse) {
+    btnCollapse.addEventListener('click', async function() {
+      if (markmapInstance && markmapInstance.state && markmapInstance.state.data) {
+        setNodeFold(markmapInstance.state.data, true, 0);
+        await markmapInstance.renderData();
+        markmapInstance.fit();
+      }
+    });
+  }
 });
 </script>
 </body>
