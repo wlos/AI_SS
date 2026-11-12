@@ -21,9 +21,9 @@ project:
     - "16-LLM-Fine-Tuning-and-Agents/Session16 LLM Fine-Tuning and AI Agents.ipynb"
   resources:
     - mindmap.html
-    - "16-LLM-Fine-Tuning-and-Agents/practice/Session16 Support Ticket Practice.ipynb"
-    - "16-LLM-Fine-Tuning-and-Agents/practice/Session16 Support Ticket Agent Practice.ipynb"
-    - "16-LLM-Fine-Tuning-and-Agents/practice/Session16 Saved Classifier Agent Practice.ipynb"
+    - "16-LLM-Fine-Tuning-and-Agents/practice/Session16 Fine-Tune Support Ticket LLM Practice.ipynb"
+    - "16-LLM-Fine-Tuning-and-Agents/practice/Session16 Ticket Agent Practice - LoRA Adapter.ipynb"
+    - "16-LLM-Fine-Tuning-and-Agents/practice/Session16 Ticket Agent Practice - Saved Classifier.ipynb"
     - 16-LLM-Fine-Tuning-and-Agents/sample_data/support_tickets.csv
     - 16-LLM-Fine-Tuning-and-Agents/sample_data/support_guides.json
     - "14-15-Sequence-Models-and-Transformers/practice/Session14-15 Support Ticket Classification Practice.ipynb"
