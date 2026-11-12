@@ -121,6 +121,9 @@ website:
       - icon: github
         href: "https://github.com/wlos/AI_SS"
 
+filters:
+  - filters/colab-links.lua
+
 format:
   html:
     theme: cosmo
