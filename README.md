@@ -66,6 +66,7 @@ The course is organised into modular sessions located directly under the reposit
 | 🏗️ [12](12-Building-and-Training-CNNs) | [Building and Training CNN Models with PyTorch](12-Building-and-Training-CNNs) | PyTorch Model Development | nn.Module Design · Forward Pass · PyTorch Training Loop · Model Evaluation · TorchScript Export · Hands-on CNN Practice |
 | 👁️ [13](13-Computer-Vision) | [Image Classification and Computer Vision Applications](13-Computer-Vision) | Vision Workflows & Advanced Models | Datasets & Transforms · DataLoader Batches · Transfer Learning with ResNet18 · YOLO & DETR Object Detection · GANs & Diffusion |
 | 🤖 [14–15](14-15-Sequence-Models-and-Transformers) | [Sequence Models and Transformer Applications](14-15-Sequence-Models-and-Transformers) | NLP & Transformer Fine-tuning | Tokenisation & Embeddings · Self-Attention · Encoder vs Decoder Architectures · DistilBERT & GPT-2 · Hugging Face Ticket Classification |
+| 🧰 [16](16-LLM-Fine-Tuning-and-Agents) | [LLM Fine-Tuning and AI Agents](<16-LLM-Fine-Tuning-and-Agents/Session16 LLM Fine-Tuning and AI Agents.ipynb>) | LLM Adaptation & Tool Use | Pre-training & Post-training · LoRA & QLoRA · Structured Outputs · Agent Tool Calls |
 
 ## 🚀 Getting Started
 
@@ -78,7 +79,7 @@ You can study all course notes and visual walk-throughs online without installin
 Every practice notebook includes an **Open in Colab** link inside the corresponding lecture. In Colab:
 
 1. Click **Open in Colab** from the lecture page.
-2. Select an appropriate runtime (a CPU runtime is sufficient for Sessions 12 and 13.1–13.2; select a T4 GPU runtime for Session 13.3 and Sessions 14–15).
+2. Select an appropriate runtime (a CPU runtime is sufficient for Sessions 12 and 13.1–13.2; select a T4 GPU runtime for Session 13.3 and Sessions 14–16 model training).
 3. Run the notebook from top to bottom. Each notebook automatically fetches required dataset files and installs supplementary packages, without requiring a local repository checkout.
 
 ### 💻 Running Locally

@@ -1,0 +1,6 @@
+{
+  "Account access": "Open the affected service’s password reset page. If the account stays locked, contact the service desk.",
+  "Hardware": "Check that the device is connected to power. Contact the service desk if it still will not start or charge.",
+  "Network": "Check the campus service status page. If there is no reported outage, reconnect to the campus Wi-Fi.",
+  "Software": "Restart the application. If the issue continues, note the error message and contact the service desk."
+}

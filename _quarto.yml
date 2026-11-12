@@ -18,8 +18,14 @@ project:
     - "13-Computer-Vision/Session13.1 Loading Images with Datasets and Transforms.ipynb"
     - "13-Computer-Vision/Session13.2 Preparing Image Batches for a CNN Model.ipynb"
     - "14-15-Sequence-Models-and-Transformers/Session14-15 Sequence Models and Transformer Applications.ipynb"
+    - "16-LLM-Fine-Tuning-and-Agents/Session16 LLM Fine-Tuning and AI Agents.ipynb"
   resources:
     - mindmap.html
+    - "16-LLM-Fine-Tuning-and-Agents/practice/Session16 Support Ticket Practice.ipynb"
+    - "16-LLM-Fine-Tuning-and-Agents/practice/Session16 Support Ticket Agent Practice.ipynb"
+    - "16-LLM-Fine-Tuning-and-Agents/practice/Session16 Saved Classifier Agent Practice.ipynb"
+    - 16-LLM-Fine-Tuning-and-Agents/sample_data/support_tickets.csv
+    - 16-LLM-Fine-Tuning-and-Agents/sample_data/support_guides.json
     - "14-15-Sequence-Models-and-Transformers/practice/Session14-15 Support Ticket Classification Practice.ipynb"
     - "13-Computer-Vision/practice/Session13.3 ResNet18 Cat and Dog Classification.ipynb"
     - "13-Computer-Vision/practice/Session13.2 Image Batches Practice.ipynb"
@@ -73,6 +79,8 @@ website:
         href: "13-Computer-Vision/Session13 Image Classification and Computer Vision Applications.ipynb"
       - text: "Sessions 14–15"
         href: "14-15-Sequence-Models-and-Transformers/Session14-15 Sequence Models and Transformer Applications.ipynb"
+      - text: "Session 16"
+        href: "16-LLM-Fine-Tuning-and-Agents/Session16 LLM Fine-Tuning and AI Agents.ipynb"
   sidebar:
     style: floating
     search: true
@@ -105,6 +113,8 @@ website:
             href: "13-Computer-Vision/Session13 Image Classification and Computer Vision Applications.ipynb"
           - text: "Sessions 14–15: Sequence Models and Transformer Applications"
             href: "14-15-Sequence-Models-and-Transformers/Session14-15 Sequence Models and Transformer Applications.ipynb"
+          - text: "Session 16: LLM Fine-Tuning and AI Agents"
+            href: "16-LLM-Fine-Tuning-and-Agents/Session16 LLM Fine-Tuning and AI Agents.ipynb"
   page-footer:
     left: "Artificial Intelligence Skill Set course materials"
     right:

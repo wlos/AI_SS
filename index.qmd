@@ -97,6 +97,13 @@ Datasets & Transforms · DataLoader Batches · Transfer Learning with ResNet18 �
 
 Tokenisation & Embeddings · Self-Attention · Encoder vs Decoder Architectures · DistilBERT & GPT-2 · Hugging Face Ticket Classification
 :::
+
+::: {.info-card}
+#### 🧰 [Session 16: LLM Fine-Tuning and AI Agents](<16-LLM-Fine-Tuning-and-Agents/Session16 LLM Fine-Tuning and AI Agents.ipynb>)
+[LLM Adaptation & Tool Use]{.focus-badge}
+
+Pre-training & Post-training · LoRA & QLoRA · Structured Outputs · Agent Tool Calls
+:::
 :::
 
 ## 🎯 Core Competencies {#core-competencies}
